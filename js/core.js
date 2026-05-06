@@ -162,9 +162,9 @@
 
 /* Set active nav link */
 ;(function(){
-  const path = location.pathname.replace(/\/$/, '') || '/'
+  const path = location.pathname.replace(/\/$/, '') || './'
   document.querySelectorAll('.nl').forEach(a => {
-    const href = a.getAttribute('href').replace(/\/$/, '') || '/'
+    const href = a.getAttribute('href').replace(/\/$/, '') || './'
     if (href === path) a.classList.add('active')
   })
 })()
