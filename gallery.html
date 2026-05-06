@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Moments From the Adda | Bun Makkhan Chai — Booming Bharat ka Adda</title>
+  <meta name="description" content="Bun Makkhan Chai — India's most loved chefless chai franchise. Booming Bharat ka Adda. Menu from ₹25. Franchise from ₹10 Lakhs.">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  
+</head>
+<body>
+<div id="spb"></div>
+<div id="loader">
+  <div class="loader-logo">bun <span>makkhan</span> chai</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-pct">0%</div>
+</div>
+<div id="c-dot"></div>
+<div id="c-ring"></div>
+
+<nav id="main-nav">
+  <a href="/index.html" class="nav-logo"><img src="/assets/images/logo.png" alt="Bun Makkhan Chai" style="height:44px;width:auto;display:block"></a>
+  <div class="nav-links-center">
+    <a href="/our-story.html" class="nl">Our Story</a>
+<a href="/menu.html" class="nl">Menu</a>
+<a href="/franchise.html" class="nl">Franchise</a>
+<a href="/locations.html" class="nl">Locations</a>
+<a href="/gallery.html" class="nl active">Gallery</a>
+<a href="/contact.html" class="nl">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="/franchise.html#form" class="btn btn-y btn-start-adda">Start Your Adda →</a>
+    <button id="ham-btn">
+      <div style="width:22px;height:2px"></div>
+      <div style="width:22px;height:2px"></div>
+      <div style="width:16px;height:2px"></div>
+    </button>
+  </div>
+</nav>
+<div id="mob-overlay">
+  <button id="mob-close">✕</button>
+  <a href="/index.html" class="mob-link">Home</a>
+<a href="/our-story.html" class="mob-link">Our Story</a>
+<a href="/menu.html" class="mob-link">Menu</a>
+<a href="/franchise.html" class="mob-link">Franchise</a>
+<a href="/locations.html" class="mob-link">Locations</a>
+<a href="/gallery.html" class="mob-link">Gallery</a>
+<a href="/contact.html" class="mob-link">Contact</a>
+  <a href="/franchise.html#form" class="btn btn-y" style="margin-top:20px;width:260px;justify-content:center">Start Your Adda →</a>
+</div>
+
+<section class="page-hero" style="background:#ffffff">
+  <div class="page-hero-dots"></div>
+  <div style="max-width:1300px;margin:0 auto;width:100%;position:relative;z-index:1">
+    <div class="stag ">GALLERY · MOMENTS FROM THE ADDA</div>
+    <h1><div class="page-hero-line"><span style="color:#0D1E28">Every cup.</span></div>
+<div class="page-hero-line"><span style="color:var(--t)">Every moment.</span></div></h1>
+    <p id="hero-sub-p" style="color:rgba(26,46,59,.65)">Real moments from real addas. The buzz, the food, the people, the conversations — this is BMC.</p>
+    
+  </div>
+</section>
+<script>
+(function(){
+  const gs = document.querySelectorAll('.page-hero-line span')
+  const sub = document.getElementById('hero-sub-p')
+  const tl = gsap.timeline({delay:.1})
+  gs.forEach((el,i) => tl.to(el, {y:0, opacity:1, duration:.9, ease:'power4.out'}, i===0?'+=0':'-=0.7'))
+  if(sub) tl.to(sub, {opacity:1, y:0, duration:.7, ease:'power3.out'}, '-=0.4')
+})()
+</script>
+<div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,48 C480,0 960,72 1440,24 L1440,72 L0,72 Z" fill="#FEFCE8"/></svg></div>
+<section style="background:#FEFCE8;padding:80px 64px">
+  <div style="max-width:1400px;margin:0 auto">
+    <div style="margin-bottom:48px">
+      <div class="stag">MOMENTS FROM THE ADDA</div>
+      <div class="big-rev"><p><span class="wo"><span class="wi acc">Real</span></span> <span class="wo"><span class="wi ">addas.</span></span> <span class="wo"><span class="wi acc">Real</span></span> <span class="wo"><span class="wi ">stories.</span></span> <span class="wo"><span class="wi acc">Real</span></span> <span class="wo"><span class="wi ">chai.</span></span></p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:16px">
+      
+<div class="gal-item rv" style="grid-row-end:span 2;background:var(--y);font-size:80px;transition-delay:0.0s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('🏪','Outlet Exterior','Outlets')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">🏪</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Outlet Exterior</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--t);font-size:56px;transition-delay:0.08s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('☕','Kulhad Chai','Food')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">☕</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Kulhad Chai</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.16s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('👥','Happy Customers','People')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">👥</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Happy Customers</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--y);font-size:56px;transition-delay:0.24s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('🍔','Chilli Burger','Food')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">🍔</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Chilli Burger</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--t);font-size:56px;transition-delay:0.0s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('🏛️','DD Puram Outlet','Outlets')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">🏛️</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">DD Puram Outlet</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.08s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('🤝','Franchise Partner','People')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">🤝</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Franchise Partner</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--y);font-size:56px;transition-delay:0.16s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('🍵','Masala Chai','Food')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">🍵</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Masala Chai</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 2;background:var(--t);font-size:80px;transition-delay:0.24s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('🎉','Grand Opening','Events')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">🎉</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Grand Opening</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.0s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('👨‍🍳','Our Team','People')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">👨‍🍳</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Our Team</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--y);font-size:56px;transition-delay:0.08s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('🌽','Nachos','Food')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">🌽</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Nachos</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--t);font-size:56px;transition-delay:0.16s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('🏪','Rampur Garden','Outlets')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">🏪</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Rampur Garden</div>
+</div>
+
+<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.24s;cursor:none"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('✨','BMC Vibes','Events')">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
+  <span style="position:relative;z-index:1">✨</span>
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">BMC Vibes</div>
+</div>
+    </div>
+    <div style="margin-top:32px;padding:20px 28px;background:rgba(42,171,187,.08);border-radius:14px;border:1px dashed rgba(42,171,187,.30);text-align:center">
+      <p style="font-size:14px;color:#4A6070">📸 <strong>Image placeholders shown.</strong> Replace each emoji card with: <code style="background:rgba(42,171,187,.10);padding:2px 8px;border-radius:6px;font-size:13px;color:var(--t)">&lt;img src="your-photo.jpg" style="width:100%;height:100%;object-fit:cover"&gt;</code></p>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" style="position:fixed;inset:0;z-index:5000;background:rgba(13,30,40,.94);display:none;align-items:center;justify-content:center" onclick="closeLightbox()">
+  <div style="background:#0D1E28;border-radius:24px;padding:48px;text-align:center;border:1px solid rgba(245,200,0,.20)">
+    <div id="lb-emoji" style="font-size:120px;margin-bottom:20px"></div>
+    <div id="lb-label" style="font-family:var(--f1);font-weight:900;font-size:24px;color:#fff"></div>
+    <div id="lb-cat" style="font-size:13px;color:rgba(255,255,255,.40);margin-top:8px"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <div style="width:50%;margin-bottom:18px"><img src="/assets/images/logo.png" alt="BMC Logo" style="width:100%;height:auto"></div>
+      <div style="font-style:italic;font-size:14px;color:rgba(255,255,255,.42);margin-bottom:8px">Gup-Shup ka Adda</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.28);line-height:1.65;margin-bottom:22px">India's most loved chefless chai franchise. Building addas across Tier 2 &amp; Tier 3 cities since 2017.</div>
+      <div style="display:flex;gap:10px">
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">📷</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">👍</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">▶️</div>
+      </div>
+    </div>
+    <div>
+      <div class="fcol-title">EXPLORE</div><div class="fcol-line"></div>
+      <a href="/index.html" class="flink">Home</a>
+<a href="/our-story.html" class="flink">Our Story</a>
+<a href="/menu.html" class="flink">Menu</a>
+<a href="/gallery.html" class="flink">Gallery</a>
+<a href="/blog.html" class="flink">Blog</a>
+    </div>
+    <div>
+      <div class="fcol-title">FRANCHISE</div><div class="fcol-line"></div>
+      <a href="/franchise.html" class="flink">Why BMC</a>
+<a href="/franchise.html#models" class="flink">Our Models</a>
+<a href="/franchise.html#form" class="flink  hi">Apply Now</a>
+<a href="#" class="flink">Download Brochure</a>
+<a href="#" class="flink">Careers</a>
+    </div>
+    <div style="min-width:0">
+      <div class="fcol-title">CONNECT</div><div class="fcol-line"></div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Head Office:</strong><br>118, Pocket D, Okhla Industrial Estate, New Delhi 110020</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Base Kitchen:</strong><br>Pilibhit Bypass, Near Bajaj Showroom, Bareilly-243122</div>
+      <a href="tel:+919990053000" style="display:block;color:var(--y);font-weight:700;font-size:14px;text-decoration:none;margin-bottom:6px;overflow-wrap:anywhere">+91 99900 53000</a>
+      <a href="mailto:info@bunmakkhanchai.com" style="display:block;color:var(--t);font-size:13px;text-decoration:none;margin-bottom:18px;overflow-wrap:anywhere">info@bunmakkhanchai.com</a>
+      <a href="https://wa.me/919990053000" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;border-radius:100px;padding:11px 18px;font-weight:700;font-size:13px;text-decoration:none;max-width:100%">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <span class="foot-copy">© 2026 Bun Makkhan Chai @ Glee Grub India Pvt. Ltd.</span>
+    <span class="foot-copy">Privacy Policy · Terms · Crafted in Bharat 🇮🇳</span>
+  </div>
+</footer>
+<a id="wa" href="https://wa.me/919990053000?text=Hi! I'm interested in BMC." target="_blank" rel="noreferrer" title="Chat on WhatsApp">💬</a>
+<script>
+function openLightbox(e,l,c){
+  document.getElementById('lb-emoji').textContent=e
+  document.getElementById('lb-label').textContent=l
+  document.getElementById('lb-cat').textContent=c
+  document.getElementById('lightbox').style.display='flex'
+}
+function closeLightbox(){ document.getElementById('lightbox').style.display='none' }
+</script>
+
+
+<script src="/js/core.js"></script>
+</body></html>

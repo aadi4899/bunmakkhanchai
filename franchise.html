@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franchise — Own the Most Happening Chai Spot In Your City | Bun Makkhan Chai — Booming Bharat ka Adda</title>
+  <meta name="description" content="Bun Makkhan Chai — India's most loved chefless chai franchise. Booming Bharat ka Adda. Menu from ₹25. Franchise from ₹10 Lakhs.">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  
+</head>
+<body>
+<div id="spb"></div>
+<div id="loader">
+  <div class="loader-logo">bun <span>makkhan</span> chai</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-pct">0%</div>
+</div>
+<div id="c-dot"></div>
+<div id="c-ring"></div>
+
+<nav id="main-nav">
+  <a href="/index.html" class="nav-logo"><img src="/assets/images/logo.png" alt="Bun Makkhan Chai" style="height:44px;width:auto;display:block"></a>
+  <div class="nav-links-center">
+    <a href="/our-story.html" class="nl">Our Story</a>
+<a href="/menu.html" class="nl">Menu</a>
+<a href="/franchise.html" class="nl active">Franchise</a>
+<a href="/locations.html" class="nl">Locations</a>
+<a href="/gallery.html" class="nl">Gallery</a>
+<a href="/contact.html" class="nl">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="/franchise.html#form" class="btn btn-y btn-start-adda">Start Your Adda →</a>
+    <button id="ham-btn">
+      <div style="width:22px;height:2px"></div>
+      <div style="width:22px;height:2px"></div>
+      <div style="width:16px;height:2px"></div>
+    </button>
+  </div>
+</nav>
+<div id="mob-overlay">
+  <button id="mob-close">✕</button>
+  <a href="/index.html" class="mob-link">Home</a>
+<a href="/our-story.html" class="mob-link">Our Story</a>
+<a href="/menu.html" class="mob-link">Menu</a>
+<a href="/franchise.html" class="mob-link">Franchise</a>
+<a href="/locations.html" class="mob-link">Locations</a>
+<a href="/gallery.html" class="mob-link">Gallery</a>
+<a href="/contact.html" class="mob-link">Contact</a>
+  <a href="/franchise.html#form" class="btn btn-y" style="margin-top:20px;width:260px;justify-content:center">Start Your Adda →</a>
+</div>
+
+<section class="page-hero" style="background:#ffffff">
+  <div class="page-hero-dots"></div>
+  <div style="max-width:1300px;margin:0 auto;width:100%;position:relative;z-index:1">
+    <div class="stag ">FRANCHISE OPPORTUNITY · 10–40 LAKHS</div>
+    <h1><div class="page-hero-line"><span style="color:#0D1E28">Own The Most</span></div>
+<div class="page-hero-line"><span style="color:var(--t)">Happening Adda</span></div>
+<div class="page-hero-line"><span style="color:#0D1E28">In Your City.</span></div></h1>
+    <p id="hero-sub-p" style="color:rgba(26,46,59,.65)">A proven chefless chai franchise model built for Booming Bharat. Full supply chain, chef-crafted recipes, and lifetime support — from Day 1.</p>
+    <div style="margin-top:36px"><a href="#form" class="btn btn-t">Apply Now <span class="btn-arr">→</span></a></div>
+  </div>
+</section>
+<script>
+(function(){
+  const gs = document.querySelectorAll('.page-hero-line span')
+  const sub = document.getElementById('hero-sub-p')
+  const tl = gsap.timeline({delay:.1})
+  gs.forEach((el,i) => tl.to(el, {y:0, opacity:1, duration:.9, ease:'power4.out'}, i===0?'+=0':'-=0.7'))
+  if(sub) tl.to(sub, {opacity:1, y:0, duration:.7, ease:'power3.out'}, '-=0.4')
+})()
+</script>
+<div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,48 C480,0 960,72 1440,24 L1440,72 L0,72 Z" fill="#F5C800"/></svg></div>
+
+<section style="background:var(--y);padding:20px 64px">
+  <div style="max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))">
+    <div style="text-align:center;padding:20px;border-right:1px solid rgba(26,46,59,.12)"><div style="font-family:var(--f1);font-weight:900;font-size:clamp(28px,4vw,56px);color:#0D1E28;line-height:1">4</div><div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(26,46,59,.55);margin-top:6px">Running Outlets</div></div><div style="text-align:center;padding:20px;border-right:1px solid rgba(26,46,59,.12)"><div style="font-family:var(--f1);font-weight:900;font-size:clamp(28px,4vw,56px);color:#0D1E28;line-height:1">5 Lakh+</div><div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(26,46,59,.55);margin-top:6px">Customers Served</div></div><div style="text-align:center;padding:20px;border-right:1px solid rgba(26,46,59,.12)"><div style="font-family:var(--f1);font-weight:900;font-size:clamp(28px,4vw,56px);color:#0D1E28;line-height:1">2</div><div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(26,46,59,.55);margin-top:6px">Cities</div></div><div style="text-align:center;padding:20px;border-right:none"><div style="font-family:var(--f1);font-weight:900;font-size:clamp(28px,4vw,56px);color:#0D1E28;line-height:1">Day 1</div><div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(26,46,59,.55);margin-top:6px">Profitable From</div></div>
+  </div>
+</section>
+<div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,36 C360,72 1080,0 1440,48 L1440,72 L0,72 Z" fill="#FEFCE8"/></svg></div>
+
+<section style="background:#FEFCE8;padding:100px 64px">
+  <div style="max-width:1400px;margin:0 auto">
+    <div style="margin-bottom:56px">
+      <div class="stag">THE BMC ADVANTAGE</div>
+      <div class="big-rev"><p><span class="wo"><span class="wi ">Built</span></span> <span class="wo"><span class="wi ">for</span></span> <span class="wo"><span class="wi ">Bharat.</span></span> <span class="wo"><span class="wi ">Designed</span></span> <span class="wo"><span class="wi ">for</span></span> <span class="wo"><span class="wi ">you.</span></span></p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+      
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:20px;padding:28px;border:2px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1)"
+  onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='var(--t)';this.style.boxShadow='0 16px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="font-size:36px;margin-bottom:14px">🍵</div>
+  <h3 style="font-family:var(--f1);font-weight:900;font-size:19px;color:#0D1E28;margin-bottom:10px">No Chef. No Problem.</h3>
+  <p style="font-size:14px;color:#4A6070;line-height:1.65">Our standardised process means any trained staff member runs operations perfectly. Zero dependency on skilled kitchen staff.</p>
+</div>
+
+<div class="rv" style="transition-delay:0.1s;background:#fff;border-radius:20px;padding:28px;border:2px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1)"
+  onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='var(--t)';this.style.boxShadow='0 16px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="font-size:36px;margin-bottom:14px">📦</div>
+  <h3 style="font-family:var(--f1);font-weight:900;font-size:19px;color:#0D1E28;margin-bottom:10px">We Supply Everything.</h3>
+  <p style="font-size:14px;color:#4A6070;line-height:1.65">Raw materials, packaging, consumables — delivered to your outlet. You focus on customers. We handle the rest.</p>
+</div>
+
+<div class="rv" style="transition-delay:0.2s;background:#fff;border-radius:20px;padding:28px;border:2px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1)"
+  onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='var(--t)';this.style.boxShadow='0 16px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="font-size:36px;margin-bottom:14px">⭐</div>
+  <h3 style="font-family:var(--f1);font-weight:900;font-size:19px;color:#0D1E28;margin-bottom:10px">India's Best Chefs.</h3>
+  <p style="font-size:14px;color:#4A6070;line-height:1.65">Every recipe crafted by top culinary experts and standardised. The masala chai in Bareilly tastes identical to the one in Bhopal.</p>
+</div>
+
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:20px;padding:28px;border:2px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1)"
+  onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='var(--t)';this.style.boxShadow='0 16px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="font-size:36px;margin-bottom:14px">📈</div>
+  <h3 style="font-family:var(--f1);font-weight:900;font-size:19px;color:#0D1E28;margin-bottom:10px">7 Years of Proof.</h3>
+  <p style="font-size:14px;color:#4A6070;line-height:1.65">4 outlets. 5 Lakh+ customers. 2 cities. Profitable from Day 1. This isn't a pitch — it's a track record.</p>
+</div>
+
+<div class="rv" style="transition-delay:0.1s;background:#fff;border-radius:20px;padding:28px;border:2px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1)"
+  onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='var(--t)';this.style.boxShadow='0 16px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="font-size:36px;margin-bottom:14px">🤝</div>
+  <h3 style="font-family:var(--f1);font-weight:900;font-size:19px;color:#0D1E28;margin-bottom:10px">We Stay With You.</h3>
+  <p style="font-size:14px;color:#4A6070;line-height:1.65">From site selection to training to launch and beyond — our team is with you at every step. Always.</p>
+</div>
+
+<div class="rv" style="transition-delay:0.2s;background:#fff;border-radius:20px;padding:28px;border:2px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1)"
+  onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='var(--t)';this.style.boxShadow='0 16px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="font-size:36px;margin-bottom:14px">💰</div>
+  <h3 style="font-family:var(--f1);font-weight:900;font-size:19px;color:#0D1E28;margin-bottom:10px">Tier 2 Costs.</h3>
+  <p style="font-size:14px;color:#4A6070;line-height:1.65">Investment designed for Booming Bharat — not metro-scale money. Start real. Grow real. Profit from Day 1.</p>
+</div>
+    </div>
+  </div>
+</section>
+<div class="wave-wrap"><svg style="background: #fefce8;" viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,20 C240,68 600,0 900,48 C1200,68 1320,20 1440,36 L1440,72 L0,72 Z" fill="#F5C800"/></svg></div>
+
+<!-- MODEL HORIZONTAL SCROLL -->
+<div id="models" class="hscroll-outer" style="height:300vh">
+  <div class="hscroll-sticky">
+    <div class="hscroll-track" style="width:300vw">
+      
+<div class="hscroll-slide" style="background:#F5C800">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(42,171,187,.10) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none"></div>
+  <div style="position:absolute;top:20px;right:60px;font-family:var(--f1);font-weight:900;font-size:20vw;color:rgba(26,46,59,.05);line-height:1;pointer-events:none;user-select:none">01</div>
+  
+  <div class="slide-dots"><div class="slide-dot" data-active="#0D1E28" style="width:24px;background:#0D1E28"></div>
+<div class="slide-dot" data-active="#0D1E28" style="width:8px;background:rgba(128,128,128,.25)"></div>
+<div class="slide-dot" data-active="#0D1E28" style="width:8px;background:rgba(128,128,128,.25)"></div></div>
+  <div style="flex:0 0 48%;z-index:1">
+    <div class="stag stag-dk">BMC ADDA</div>
+    <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(44px,6vw,88px);color:#0D1E28;line-height:.92;letter-spacing:-2.5px;margin-bottom:12px">₹10,00,000</h2>
+    <div style="font-size:15px;color:rgba(26,46,59,.55);margin-bottom:8px;font-weight:600">200–300 sqft</div>
+    <div style="font-size:14px;color:rgba(26,46,59,.50);margin-bottom:28px">Hill Towns · Nainital · Almora</div>
+    <p style="font-size:16px;color:rgba(26,46,59,.68);line-height:1.7;max-width:420px;margin-bottom:32px">Perfect for high-footfall kiosk locations — malls, stations, busy markets in smaller towns.</p>
+    <ul style="list-style:none;margin-bottom:36px"><li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Equipment & setup included</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Staff training program</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Centralised supply chain</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Marketing & launch support</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Billing & inventory system</li></ul>
+    <a href="#form" class="btn btn-t">Apply for This Model <span class="btn-arr">→</span></a>
+  </div>
+  <div style="flex:0 0 42%;display:flex;align-items:center;justify-content:center;z-index:1">
+    <div style="background:rgba(42,171,187,.12);border:2px solid rgba(42,171,187,.20);border-radius:28px;padding:56px 48px;text-align:center;animation:heroFloat 5s ease-in-out infinite;max-width:360px;width:100%">
+      <div style="width:100%;aspect-ratio:1;max-width:220px;margin:0 auto 28px;border-radius:20px;overflow:hidden"><img src="/assets/franchise/model-adda.svg" onerror="this.src='/assets/franchise/_default.svg'" alt="BMC Adda" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+      <div style="font-family:var(--f1);font-weight:900;font-size:28px;color:#0D1E28;margin-bottom:8px">BMC Adda</div>
+      <div style="font-size:14px;color:rgba(26,46,59,.50)">200–300 sqft · Hill Towns</div>
+    </div>
+  </div>
+</div>
+
+<div class="hscroll-slide" style="background:#2AABBB">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(42,171,187,.10) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none"></div>
+  <div style="position:absolute;top:20px;right:60px;font-family:var(--f1);font-weight:900;font-size:20vw;color:rgba(255,255,255,.06);line-height:1;pointer-events:none;user-select:none">02</div>
+  <div style="position:absolute;top:30px;left:50%;transform:translateX(-50%);background:var(--y);color:#0D1E28;font-family:var(--f2);font-weight:800;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 20px;border-radius:100px">Most Popular</div>
+  <div class="slide-dots"><div class="slide-dot" data-active="#fff" style="width:24px;background:#fff"></div>
+<div class="slide-dot" data-active="#fff" style="width:8px;background:rgba(128,128,128,.25)"></div>
+<div class="slide-dot" data-active="#fff" style="width:8px;background:rgba(128,128,128,.25)"></div></div>
+  <div style="flex:0 0 48%;z-index:1">
+    <div class="stag stag-w">BMC MINI CAFÉ</div>
+    <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(44px,6vw,88px);color:#fff;line-height:.92;letter-spacing:-2.5px;margin-bottom:12px">₹14,75,000</h2>
+    <div style="font-size:15px;color:rgba(255,255,255,.65);margin-bottom:8px;font-weight:600">400–500 sqft</div>
+    <div style="font-size:14px;color:rgba(255,255,255,.55);margin-bottom:28px">Rudrapur · Haldwani · Growing Towns</div>
+    <p style="font-size:16px;color:rgba(255,255,255,.75);line-height:1.7;max-width:420px;margin-bottom:32px">The sweet spot. Your neighbourhood's go-to adda with the full BMC experience.</p>
+    <ul style="list-style:none;margin-bottom:36px"><li style="display:flex;align-items:center;gap:10px;font-size:15px;color:rgba(255,255,255,.80);padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(255,255,255,.12)"><span style="color:var(--y);font-weight:900;font-size:12px">✓</span>Everything in Adda+</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:rgba(255,255,255,.80);padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(255,255,255,.12)"><span style="color:var(--y);font-weight:900;font-size:12px">✓</span>Seating area & décor</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:rgba(255,255,255,.80);padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(255,255,255,.12)"><span style="color:var(--y);font-weight:900;font-size:12px">✓</span>Full menu access</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:rgba(255,255,255,.80);padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(255,255,255,.12)"><span style="color:var(--y);font-weight:900;font-size:12px">✓</span>Premium brand support</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:rgba(255,255,255,.80);padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(255,255,255,.12)"><span style="color:var(--y);font-weight:900;font-size:12px">✓</span>Dedicated account manager</li></ul>
+    <a href="#form" class="btn btn-y">Apply for This Model <span class="btn-arr">→</span></a>
+  </div>
+  <div style="flex:0 0 42%;display:flex;align-items:center;justify-content:center;z-index:1">
+    <div style="background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);border-radius:28px;padding:56px 48px;text-align:center;animation:heroFloat 5s ease-in-out infinite;max-width:360px;width:100%">
+      <div style="width:100%;aspect-ratio:1;max-width:220px;margin:0 auto 28px;border-radius:20px;overflow:hidden"><img src="/assets/franchise/model-mini-cafe.svg" onerror="this.src='/assets/franchise/_default.svg'" alt="BMC Mini Café" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+      <div style="font-family:var(--f1);font-weight:900;font-size:28px;color:#fff;margin-bottom:8px">BMC Mini Café</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.55)">400–500 sqft · Rudrapur</div>
+    </div>
+  </div>
+</div>
+
+<div class="hscroll-slide" style="background:#f5c800">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(42,171,187,.10) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none"></div>
+  <div style="position:absolute;top:20px;right:60px;font-family:var(--f1);font-weight:900;font-size:20vw;color:rgba(26,46,59,.05);line-height:1;pointer-events:none;user-select:none">03</div>
+  
+  <div class="slide-dots"><div class="slide-dot" data-active="#0D1E28" style="width:24px;background:#0D1E28"></div>
+<div class="slide-dot" data-active="#0D1E28" style="width:8px;background:rgba(128,128,128,.25)"></div>
+<div class="slide-dot" data-active="#0D1E28" style="width:8px;background:rgba(128,128,128,.25)"></div></div>
+  <div style="flex:0 0 48%;z-index:1">
+    <div class="stag stag-dk">BMC CAFÉ</div>
+    <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(44px,6vw,88px);color:#0D1E28;line-height:.92;letter-spacing:-2.5px;margin-bottom:12px">₹35,00,000</h2>
+    <div style="font-size:15px;color:rgba(26,46,59,.55);margin-bottom:8px;font-weight:600">1500–1700 sqft</div>
+    <div style="font-size:14px;color:rgba(26,46,59,.50);margin-bottom:28px">Bareilly · Moradabad · UP West</div>
+    <p style="font-size:16px;color:rgba(26,46,59,.68);line-height:1.7;max-width:420px;margin-bottom:32px">A flagship adda for prime city locations. The complete BMC experience, at scale.</p>
+    <ul style="list-style:none;margin-bottom:36px"><li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Flagship outlet format</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Full dine-in experience</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Exclusive city rights</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Complete brand ecosystem</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#0D1E28;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(26,46,59,.08)"><span style="color:var(--t);font-weight:900;font-size:12px">✓</span>Premium interior design</li></ul>
+    <a href="#form" class="btn btn-t">Apply for This Model <span class="btn-arr">→</span></a>
+  </div>
+  <div style="flex:0 0 42%;display:flex;align-items:center;justify-content:center;z-index:1">
+    <div style="background:rgba(42,171,187,.12);border:2px solid rgba(42,171,187,.20);border-radius:28px;padding:56px 48px;text-align:center;animation:heroFloat 5s ease-in-out infinite;max-width:360px;width:100%">
+      <div style="width:100%;aspect-ratio:1;max-width:220px;margin:0 auto 28px;border-radius:20px;overflow:hidden"><img src="/assets/franchise/model-cafe.svg" onerror="this.src='/assets/franchise/_default.svg'" alt="BMC Café" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+      <div style="font-family:var(--f1);font-weight:900;font-size:28px;color:#0D1E28;margin-bottom:8px">BMC Café</div>
+      <div style="font-size:14px;color:rgba(26,46,59,.50)">1500–1700 sqft · Bareilly</div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="wave-wrap"><svg style="background:#f5c800 ;" viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,36 C360,72 1080,0 1440,48 L1440,72 L0,72 Z" fill="#FEFCE8"/></svg></div>
+
+<!-- ROI CALCULATOR -->
+<section style="background:#FEFCE8;padding:100px 64px">
+  <div style="max-width:1400px;margin:0 auto">
+    <div style="margin-bottom:56px">
+      <div class="stag">YOUR NUMBERS</div>
+      <div class="big-rev"><p><span class="wo"><span class="wi ">See</span></span> <span class="wo"><span class="wi ">what</span></span> <span class="wo"><span class="wi ">your</span></span> <span class="wo"><span class="wi acc">adda</span></span> <span class="wo"><span class="wi ">could</span></span> <span class="wo"><span class="wi ">earn.</span></span></p></div>
+      <p style="font-size:16px;color:rgba(26,46,59,.55);margin-top:16px;font-style:italic">Illustrative projections. Actual results vary by location and operations.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+      <div style="background:#fff;border-radius:24px;padding:40px;border:2px solid rgba(245,200,0,.25)">
+        <h3 style="font-family:var(--f1);font-weight:900;font-size:24px;color:#0D1E28;margin-bottom:32px">Configure Your Outlet</h3>
+        <div style="margin-bottom:28px">
+          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#4A6070;margin-bottom:12px">Select Model</label>
+          <div style="display:flex;gap:10px;flex-wrap:wrap" id="model-btns">
+            <button onclick="setModel(0,this)" style="padding:10px 18px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:12px;border:none;cursor:none;background:rgba(42,171,187,.08);color:#4A6070;transition:all .25s">BMC Adda</button>
+            <button onclick="setModel(1,this)" style="padding:10px 18px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:12px;border:none;cursor:none;background:var(--t);color:#fff;transform:scale(1.05)">BMC Mini Café</button>
+            <button onclick="setModel(2,this)" style="padding:10px 18px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:12px;border:none;cursor:none;background:rgba(42,171,187,.08);color:#4A6070;transition:all .25s">BMC Café</button>
+          </div>
+        </div>
+        <div>
+          <label style="display:flex;justify-content:space-between;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#4A6070;margin-bottom:12px">
+            <span>Estimated Daily Footfall</span><span style="color:var(--t);font-size:16px" id="ff-label">150 customers</span>
+          </label>
+          <input type="range" min="50" max="500" step="25" value="150" id="ff-slider" oninput="updateROI()" style="width:100%;accent-color:var(--t);height:4px">
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#4A6070;margin-top:6px"><span>50</span><span>500</span></div>
+        </div>
+      </div>
+      <div style="background:#0D1E28;border-radius:24px;padding:40px;border:1px solid rgba(42,171,187,.20)">
+        <h3 style="font-family:var(--f1);font-weight:900;font-size:24px;color:#fff;margin-bottom:32px">Projected Performance</h3>
+        <div id="roi-rev" style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07)"><span style="font-size:14px;color:rgba(255,255,255,.55);font-weight:600">Monthly Revenue</span><span style="font-family:var(--f1);font-weight:900;font-size:26px;color:var(--y);line-height:1">₹3,82,500</span></div>
+        <div id="roi-profit" style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07)"><span style="font-size:14px;color:rgba(255,255,255,.55);font-weight:600">Monthly Profit (est.)</span><span style="font-family:var(--f1);font-weight:900;font-size:26px;color:#2AABBB;line-height:1">₹1,07,100</span></div>
+        <div id="roi-be" style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07)"><span style="font-size:14px;color:rgba(255,255,255,.55);font-weight:600">Break-even (est.)</span><span style="font-family:var(--f1);font-weight:900;font-size:26px;color:#fff;line-height:1">14 months</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0"><span style="font-size:14px;color:rgba(255,255,255,.55);font-weight:600">Investment</span><span id="roi-inv" style="font-family:var(--f1);font-weight:900;font-size:26px;color:rgba(255,255,255,.45);line-height:1">₹14.75L</span></div>
+        <a href="#form" class="btn btn-y" style="width:100%;justify-content:center;margin-top:28px;font-size:13px">Get Real Numbers on a Call <span class="btn-arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="wave-wrap"><svg style="background-color: #fefce8;" viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,48 C480,0 960,72 1440,24 L1440,72 L0,72 Z" fill="#f2c600"/></svg></div>
+
+<section style="background:var(--y);padding:100px 64px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(42,171,187,.12) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none"></div>
+  <div style="max-width:1400px;margin:0 auto;position:relative;z-index:1">
+    <div style="text-align:center;margin-bottom:64px">
+      <div class="stag stag-dk" style="justify-content:center">FROM LOCATION TO LAUNCH</div>
+      <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(30px,4.5vw,64px);color:#0D1E28;line-height:1.0;letter-spacing:-1.5px">We're with you <span style="color:var(--t)">every step.</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:0;position:relative">
+      <div style="position:absolute;top:28px;left:calc(100%/14);right:calc(100%/14);height:3px;border-top:3px dashed rgba(42,171,187,.40);z-index:0"></div>
+      
+<div class="rv" style="transition-delay:0.0s;text-align:center;padding:0 6px;position:relative;z-index:1">
+  <div style="width:56px;height:56px;border-radius:50%;border:3px solid var(--t);background:var(--y);display:flex;align-items:center;justify-content:center;font-family:var(--f1);font-weight:900;font-size:16px;color:#0D1E28;margin:0 auto 14px;box-shadow:0 4px 20px rgba(42,171,187,.30);transition:transform .3s cubic-bezier(.34,1.56,.64,1)"
+    onmouseenter="this.style.transform='scale(1.25)'" onmouseleave="this.style.transform=''">
+    01
+  </div>
+  <div style="font-family:var(--f1);font-weight:900;font-size:13px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Location Identification</div>
+  <div style="font-size:11px;color:rgba(26,46,59,.55);line-height:1.4">We find the perfect spot in your city</div>
+</div>
+
+<div class="rv" style="transition-delay:0.08s;text-align:center;padding:0 6px;position:relative;z-index:1">
+  <div style="width:56px;height:56px;border-radius:50%;border:3px solid var(--t);background:var(--y);display:flex;align-items:center;justify-content:center;font-family:var(--f1);font-weight:900;font-size:16px;color:#0D1E28;margin:0 auto 14px;box-shadow:0 4px 20px rgba(42,171,187,.30);transition:transform .3s cubic-bezier(.34,1.56,.64,1)"
+    onmouseenter="this.style.transform='scale(1.25)'" onmouseleave="this.style.transform=''">
+    02
+  </div>
+  <div style="font-family:var(--f1);font-weight:900;font-size:13px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Outlet Design & Fabrication</div>
+  <div style="font-size:11px;color:rgba(26,46,59,.55);line-height:1.4">BMC-branded fit-out support</div>
+</div>
+
+<div class="rv" style="transition-delay:0.16s;text-align:center;padding:0 6px;position:relative;z-index:1">
+  <div style="width:56px;height:56px;border-radius:50%;border:3px solid var(--t);background:var(--y);display:flex;align-items:center;justify-content:center;font-family:var(--f1);font-weight:900;font-size:16px;color:#0D1E28;margin:0 auto 14px;box-shadow:0 4px 20px rgba(42,171,187,.30);transition:transform .3s cubic-bezier(.34,1.56,.64,1)"
+    onmouseenter="this.style.transform='scale(1.25)'" onmouseleave="this.style.transform=''">
+    03
+  </div>
+  <div style="font-family:var(--f1);font-weight:900;font-size:13px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Equipment Setup</div>
+  <div style="font-size:11px;color:rgba(26,46,59,.55);line-height:1.4">Right tools from day one</div>
+</div>
+
+<div class="rv" style="transition-delay:0.24s;text-align:center;padding:0 6px;position:relative;z-index:1">
+  <div style="width:56px;height:56px;border-radius:50%;border:3px solid var(--t);background:var(--y);display:flex;align-items:center;justify-content:center;font-family:var(--f1);font-weight:900;font-size:16px;color:#0D1E28;margin:0 auto 14px;box-shadow:0 4px 20px rgba(42,171,187,.30);transition:transform .3s cubic-bezier(.34,1.56,.64,1)"
+    onmouseenter="this.style.transform='scale(1.25)'" onmouseleave="this.style.transform=''">
+    04
+  </div>
+  <div style="font-family:var(--f1);font-weight:900;font-size:13px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Staff Hiring & Training</div>
+  <div style="font-size:11px;color:rgba(26,46,59,.55);line-height:1.4">Your team, ready to serve</div>
+</div>
+
+<div class="rv" style="transition-delay:0.32s;text-align:center;padding:0 6px;position:relative;z-index:1">
+  <div style="width:56px;height:56px;border-radius:50%;border:3px solid var(--t);background:var(--y);display:flex;align-items:center;justify-content:center;font-family:var(--f1);font-weight:900;font-size:16px;color:#0D1E28;margin:0 auto 14px;box-shadow:0 4px 20px rgba(42,171,187,.30);transition:transform .3s cubic-bezier(.34,1.56,.64,1)"
+    onmouseenter="this.style.transform='scale(1.25)'" onmouseleave="this.style.transform=''">
+    05
+  </div>
+  <div style="font-family:var(--f1);font-weight:900;font-size:13px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Centralised Supply Chain</div>
+  <div style="font-size:11px;color:rgba(26,46,59,.55);line-height:1.4">Never run out. Never worry.</div>
+</div>
+
+<div class="rv" style="transition-delay:0.4s;text-align:center;padding:0 6px;position:relative;z-index:1">
+  <div style="width:56px;height:56px;border-radius:50%;border:3px solid var(--t);background:var(--y);display:flex;align-items:center;justify-content:center;font-family:var(--f1);font-weight:900;font-size:16px;color:#0D1E28;margin:0 auto 14px;box-shadow:0 4px 20px rgba(42,171,187,.30);transition:transform .3s cubic-bezier(.34,1.56,.64,1)"
+    onmouseenter="this.style.transform='scale(1.25)'" onmouseleave="this.style.transform=''">
+    06
+  </div>
+  <div style="font-family:var(--f1);font-weight:900;font-size:13px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Billing & Inventory</div>
+  <div style="font-size:11px;color:rgba(26,46,59,.55);line-height:1.4">Full tech stack provided</div>
+</div>
+
+<div class="rv" style="transition-delay:0.48s;text-align:center;padding:0 6px;position:relative;z-index:1">
+  <div style="width:56px;height:56px;border-radius:50%;border:3px solid var(--t);background:var(--y);display:flex;align-items:center;justify-content:center;font-family:var(--f1);font-weight:900;font-size:16px;color:#0D1E28;margin:0 auto 14px;box-shadow:0 4px 20px rgba(42,171,187,.30);transition:transform .3s cubic-bezier(.34,1.56,.64,1)"
+    onmouseenter="this.style.transform='scale(1.25)'" onmouseleave="this.style.transform=''">
+    07
+  </div>
+  <div style="font-family:var(--f1);font-weight:900;font-size:13px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Marketing & Launch</div>
+  <div style="font-size:11px;color:rgba(26,46,59,.55);line-height:1.4">Grand opening support</div>
+</div>
+    </div>
+  </div>
+</section>
+<div class="wave-wrap"><svg style="background:#f5c800;" viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,36 C360,72 1080,0 1440,48 L1440,72 L0,72 Z" fill="#2AABBB"/></svg></div>
+
+<!-- FORM -->
+<section id="form" style="background:var(--t);padding:100px 64px">
+  <div style="max-width:1400px;margin:0 auto">
+    <div style="text-align:center;margin-bottom:48px">
+      <div class="stag stag-w" style="justify-content:center">START YOUR ADDA</div>
+      <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(36px,6vw,88px);color:#fff;line-height:.95;letter-spacing:-2.5px;margin-bottom:16px">Your city's adda<br>is waiting.</h2>
+      <p style="font-size:18px;color:rgba(255,255,255,.82);line-height:1.65">Fill in your details. Our franchise team connects within 24 hours.</p>
+      <p style="font-family:var(--f1);font-weight:800;font-size:16px;font-style:italic;color:rgba(255,255,255,.42);margin-top:8px">"101 saal ka experience. Ek proven brand. Sirf ek decision aapka hai."</p>
+    </div>
+    <div style="max-width:820px;margin:0 auto">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+        <div><label style="display:block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:8px">Your Name *</label><input type="text" placeholder="Rahul Sharma" class="fi"></div><div><label style="display:block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:8px">Phone (WhatsApp) *</label><input type="tel" placeholder="+91 98765 43210" class="fi"></div><div><label style="display:block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:8px">Email Address *</label><input type="email" placeholder="rahul@example.com" class="fi"></div><div><label style="display:block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:8px">Your City *</label><input type="text" placeholder="Jaipur, Indore, Lucknow..." class="fi"></div>
+      </div>
+      <div style="margin-bottom:16px">
+        <label style="display:block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:8px">Investment Model</label>
+        <select class="fi" style="appearance:none">
+          <option value="" style="background:#0D1E28">Select your model</option>
+          <option value="adda" style="background:#0D1E28">BMC Adda — ₹10,00,000 (200–300 sqft)</option>
+          <option value="mini" style="background:#0D1E28">BMC Mini Café — ₹14,75,000 (400–500 sqft)</option>
+          <option value="cafe" style="background:#0D1E28">BMC Café — ₹35,00,000 (1500–1700 sqft)</option>
+        </select>
+      </div>
+      <div style="margin-bottom:24px">
+        <label style="display:block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:8px">Tell us your dream (optional)</label>
+        <textarea rows="3" placeholder="Share your vision for your adda..." class="fi" style="resize:vertical"></textarea>
+      </div>
+      <button onclick="alert('Thank you! Our franchise team will contact you within 24 hours. Booming Bharat ka Adda! 🍵')" style="width:100%;padding:18px;border-radius:100px;background:var(--y);color:#0D1E28;font-family:var(--f2);font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;border:none;cursor:none;transition:all .28s cubic-bezier(.34,1.56,.64,1)"
+        onmouseenter="this.style.transform='scale(1.02) translateY(-2px)';this.style.boxShadow='0 16px 40px rgba(245,200,0,.45)'"
+        onmouseleave="this.style.transform='';this.style.boxShadow='none'">
+        Start My Adda Journey →
+      </button>
+      <div style="display:flex;gap:24px;justify-content:center;margin-top:20px;flex-wrap:wrap">
+        <a href="https://wa.me/919990053000" style="color:rgba(255,255,255,.70);font-size:14px;text-decoration:none">💬 WhatsApp us directly →</a>
+        <a href="#" style="color:rgba(255,255,255,.70);font-size:14px;text-decoration:underline">📥 Download Brochure</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="wave-wrap" style="background-color: #2AABBB;"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,48 C480,0 960,72 1440,24 L1440,72 L0,72 Z" fill="#fefce8"/></svg></div>
+
+<section style="background:#fefce8;padding:100px 64px;text-align:center">
+  <div style="max-width:700px;margin:0 auto">
+    <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(40px,6vw,88px);color:#000000;line-height:.92;letter-spacing:-2.5px;margin-bottom:20px">Ab aapki<br><span style="color:var(--y)">baari hai.</span></h2>
+    <p style="font-size:18px;color:rgba(0, 0, 0, 0.5);margin-bottom:36px">"101 saal ka experience. Ek proven brand. Ek ready market."</p>
+    <a href="#form" class="btn btn-y" style="font-size:14px;padding:16px 44px">Start My Adda Journey <span class="btn-arr">→</span></a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <div style="width:50%;margin-bottom:18px"><img src="/assets/images/logo.png" alt="BMC Logo" style="width:100%;height:auto"></div>
+      <div style="font-style:italic;font-size:14px;color:rgba(255,255,255,.42);margin-bottom:8px">Gup-Shup ka Adda</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.28);line-height:1.65;margin-bottom:22px">India's most loved chefless chai franchise. Building addas across Tier 2 &amp; Tier 3 cities since 2017.</div>
+      <div style="display:flex;gap:10px">
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">📷</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">👍</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">▶️</div>
+      </div>
+    </div>
+    <div>
+      <div class="fcol-title">EXPLORE</div><div class="fcol-line"></div>
+      <a href="/index.html" class="flink">Home</a>
+<a href="/our-story.html" class="flink">Our Story</a>
+<a href="/menu.html" class="flink">Menu</a>
+<a href="/gallery.html" class="flink">Gallery</a>
+<a href="/blog.html" class="flink">Blog</a>
+    </div>
+    <div>
+      <div class="fcol-title">FRANCHISE</div><div class="fcol-line"></div>
+      <a href="/franchise.html" class="flink">Why BMC</a>
+<a href="/franchise.html#models" class="flink">Our Models</a>
+<a href="/franchise.html#form" class="flink  hi">Apply Now</a>
+<a href="#" class="flink">Download Brochure</a>
+<a href="#" class="flink">Careers</a>
+    </div>
+    <div style="min-width:0">
+      <div class="fcol-title">CONNECT</div><div class="fcol-line"></div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Head Office:</strong><br>118, Pocket D, Okhla Industrial Estate, New Delhi 110020</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Base Kitchen:</strong><br>Pilibhit Bypass, Near Bajaj Showroom, Bareilly-243122</div>
+      <a href="tel:+919990053000" style="display:block;color:var(--y);font-weight:700;font-size:14px;text-decoration:none;margin-bottom:6px;overflow-wrap:anywhere">+91 99900 53000</a>
+      <a href="mailto:info@bunmakkhanchai.com" style="display:block;color:var(--t);font-size:13px;text-decoration:none;margin-bottom:18px;overflow-wrap:anywhere">info@bunmakkhanchai.com</a>
+      <a href="https://wa.me/919990053000" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;border-radius:100px;padding:11px 18px;font-weight:700;font-size:13px;text-decoration:none;max-width:100%">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <span class="foot-copy">© 2026 Bun Makkhan Chai @ Glee Grub India Pvt. Ltd.</span>
+    <span class="foot-copy">Privacy Policy · Terms · Crafted in Bharat 🇮🇳</span>
+  </div>
+</footer>
+<a id="wa" href="https://wa.me/919990053000?text=Hi! I'm interested in BMC." target="_blank" rel="noreferrer" title="Chat on WhatsApp">💬</a>
+<script>
+const modelData = [
+  {inv:1000000, avgBill:85, label:'₹10.00L'},
+  {inv:1475000, avgBill:95, label:'₹14.75L'},
+  {inv:3500000, avgBill:110, label:'₹35.00L'},
+]
+let curModel = 1
+function fmt(n){ return '₹'+n.toLocaleString('en-IN') }
+function updateROI(){
+  const ff = +document.getElementById('ff-slider').value
+  document.getElementById('ff-label').textContent = ff + ' customers'
+  const m = modelData[curModel]
+  const rev = Math.round(ff * m.avgBill * 30)
+  const profit = Math.round(rev * 0.28)
+  const be = Math.ceil(m.inv / profit)
+  document.getElementById('roi-rev').querySelector('span:last-child').textContent = fmt(rev)
+  document.getElementById('roi-profit').querySelector('span:last-child').textContent = fmt(profit)
+  document.getElementById('roi-be').querySelector('span:last-child').textContent = be + ' months'
+  document.getElementById('roi-inv').textContent = m.label
+}
+function setModel(idx, btn){
+  curModel = idx
+  document.querySelectorAll('#model-btns button').forEach(b => {
+    b.style.background='rgba(42,171,187,.08)'; b.style.color='#4A6070'; b.style.transform=''
+  })
+  btn.style.background='var(--t)'; btn.style.color='#fff'; btn.style.transform='scale(1.05)'
+  updateROI()
+}
+</script>
+
+
+<script src="/js/core.js"></script>
+</body></html>

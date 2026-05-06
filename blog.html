@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Stories Worth Reading Over Chai | Bun Makkhan Chai — Booming Bharat ka Adda</title>
+  <meta name="description" content="Bun Makkhan Chai — India's most loved chefless chai franchise. Booming Bharat ka Adda. Menu from ₹25. Franchise from ₹10 Lakhs.">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  
+</head>
+<body>
+<div id="spb"></div>
+<div id="loader">
+  <div class="loader-logo">bun <span>makkhan</span> chai</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-pct">0%</div>
+</div>
+<div id="c-dot"></div>
+<div id="c-ring"></div>
+
+<nav id="main-nav">
+  <a href="/index.html" class="nav-logo"><img src="/assets/images/logo.png" alt="Bun Makkhan Chai" style="height:44px;width:auto;display:block"></a>
+  <div class="nav-links-center">
+    <a href="/our-story.html" class="nl">Our Story</a>
+<a href="/menu.html" class="nl">Menu</a>
+<a href="/franchise.html" class="nl">Franchise</a>
+<a href="/locations.html" class="nl">Locations</a>
+<a href="/gallery.html" class="nl">Gallery</a>
+<a href="/contact.html" class="nl">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="/franchise.html#form" class="btn btn-y btn-start-adda">Start Your Adda →</a>
+    <button id="ham-btn">
+      <div style="width:22px;height:2px"></div>
+      <div style="width:22px;height:2px"></div>
+      <div style="width:16px;height:2px"></div>
+    </button>
+  </div>
+</nav>
+<div id="mob-overlay">
+  <button id="mob-close">✕</button>
+  <a href="/index.html" class="mob-link">Home</a>
+<a href="/our-story.html" class="mob-link">Our Story</a>
+<a href="/menu.html" class="mob-link">Menu</a>
+<a href="/franchise.html" class="mob-link">Franchise</a>
+<a href="/locations.html" class="mob-link">Locations</a>
+<a href="/gallery.html" class="mob-link">Gallery</a>
+<a href="/contact.html" class="mob-link">Contact</a>
+  <a href="/franchise.html#form" class="btn btn-y" style="margin-top:20px;width:260px;justify-content:center">Start Your Adda →</a>
+</div>
+
+<section class="page-hero" style="background:#ffffff">
+  <div class="page-hero-dots"></div>
+  <div style="max-width:1300px;margin:0 auto;width:100%;position:relative;z-index:1">
+    <div class="stag ">FROM THE ADDA · STORIES & GUIDES</div>
+    <h1><div class="page-hero-line"><span style="color:#0D1E28">Stories worth</span></div>
+<div class="page-hero-line"><span style="color:var(--t)">reading over chai.</span></div></h1>
+    <p id="hero-sub-p" style="color:rgba(26,46,59,.65)">Chai culture. Franchise guides. Bharat stories. Everything worth reading while your chai brews.</p>
+    
+  </div>
+</section>
+<script>
+(function(){
+  const gs = document.querySelectorAll('.page-hero-line span')
+  const sub = document.getElementById('hero-sub-p')
+  const tl = gsap.timeline({delay:.1})
+  gs.forEach((el,i) => tl.to(el, {y:0, opacity:1, duration:.9, ease:'power4.out'}, i===0?'+=0':'-=0.7'))
+  if(sub) tl.to(sub, {opacity:1, y:0, duration:.7, ease:'power3.out'}, '-=0.4')
+})()
+</script>
+<div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,48 C480,0 960,72 1440,24 L1440,72 L0,72 Z" fill="#FEFCE8"/></svg></div>
+
+<section style="background:#FEFCE8;padding:80px 64px 0">
+  <div style="max-width:1400px;margin:0 auto">
+    <div style="margin-bottom:48px"><div class="stag">FEATURED STORY</div></div>
+    <div class="rv" style="background:#0D1E28;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;min-height:380px">
+      <div style="padding:56px 48px;display:flex;flex-direction:column;justify-content:center">
+        <span style="display:inline-block;padding:5px 14px;border-radius:100px;background:var(--y);color:#0D1E28;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px">BHARAT STORIES</span>
+        <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(24px,3vw,40px);color:#fff;line-height:1.1;margin-bottom:16px">Why Tier 2 India is the next big F&B opportunity</h2>
+        <p style="font-size:15px;color:rgba(255,255,255,.58);line-height:1.7;margin-bottom:28px">400 million untapped consumers. Rising incomes. And an appetite for quality that metros keep underestimating.</p>
+        <div style="display:flex;align-items:center;gap:16px">
+          <a href="#" class="btn btn-y" style="font-size:12px;padding:12px 24px">Read Story <span class="btn-arr">→</span></a>
+          <span style="font-size:12px;color:rgba(255,255,255,.35);letter-spacing:1px">6 min read · May 2026</span>
+        </div>
+      </div>
+      <div style="background:rgba(245,200,0,.08);display:flex;align-items:center;justify-content:center;font-size:120px;position:relative">
+        <span style="animation:heroFloat 5s ease-in-out infinite">🇮🇳</span>
+        <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(42,171,187,.10) 1.5px,transparent 1.5px);background-size:24px 24px;pointer-events:none"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#FEFCE8;padding:60px 64px 100px">
+  <div style="max-width:1400px;margin:0 auto">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px"><button type="button" class="cat-btn  active" data-cat="All" onclick="filterPosts(this,'All')" style="padding:10px 22px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;background:var(--t);color:#fff;transform:scale(1.05);transition:all .25s">All</button>
+<button type="button" class="cat-btn" data-cat="Chai Culture" onclick="filterPosts(this,'Chai Culture')" style="padding:10px 22px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;background:rgba(42,171,187,.08);color:#4A6070;transition:all .25s">Chai Culture</button>
+<button type="button" class="cat-btn" data-cat="Franchise Guide" onclick="filterPosts(this,'Franchise Guide')" style="padding:10px 22px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;background:rgba(42,171,187,.08);color:#4A6070;transition:all .25s">Franchise Guide</button>
+<button type="button" class="cat-btn" data-cat="Bharat Stories" onclick="filterPosts(this,'Bharat Stories')" style="padding:10px 22px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;background:rgba(42,171,187,.08);color:#4A6070;transition:all .25s">Bharat Stories</button>
+<button type="button" class="cat-btn" data-cat="Behind the Scenes" onclick="filterPosts(this,'Behind the Scenes')" style="padding:10px 22px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;background:rgba(42,171,187,.08);color:#4A6070;transition:all .25s">Behind the Scenes</button></div>
+    <div id="blog-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+      
+<div class="blog-card rv" data-cat="CHAI CULTURE" style="transition-delay:0.0s">
+  <div style="height:160px;background:rgba(42,171,187,.06);display:flex;align-items:center;justify-content:center;font-size:72px">
+    <span style="transition:transform .3s ease" onmouseenter="this.style.transform='scale(1.2)'" onmouseleave="this.style.transform=''">
+      ☕
+    </span>
+  </div>
+  <div style="padding:20px 22px 24px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:var(--y);color:#0D1E28;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px">CHAI CULTURE</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;line-height:1.2;margin-bottom:10px">5 types of chai lovers you'll find at every adda</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55;margin-bottom:18px">The morning rusher. The philosopher. The couple on their first unofficial date. The college gang. We know every one of them.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span style="font-size:11px;color:#4A6070;letter-spacing:1px">3 min read · Apr 2026</span>
+      <a href="#" style="font-family:var(--f2);font-weight:700;font-size:12px;color:var(--t);text-decoration:none;letter-spacing:1px">Read →</a>
+    </div>
+  </div>
+</div>
+
+<div class="blog-card rv" data-cat="FRANCHISE GUIDE" style="transition-delay:0.1s">
+  <div style="height:160px;background:rgba(42,171,187,.06);display:flex;align-items:center;justify-content:center;font-size:72px">
+    <span style="transition:transform .3s ease" onmouseenter="this.style.transform='scale(1.2)'" onmouseleave="this.style.transform=''">
+      📋
+    </span>
+  </div>
+  <div style="padding:20px 22px 24px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:var(--y);color:#0D1E28;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px">FRANCHISE GUIDE</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;line-height:1.2;margin-bottom:10px">How to start a chefless food business in UP</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55;margin-bottom:18px">The complete guide to low-investment F&B in Tier 2 cities — without hiring a single chef.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span style="font-size:11px;color:#4A6070;letter-spacing:1px">8 min read · Apr 2026</span>
+      <a href="#" style="font-family:var(--f2);font-weight:700;font-size:12px;color:var(--t);text-decoration:none;letter-spacing:1px">Read →</a>
+    </div>
+  </div>
+</div>
+
+<div class="blog-card rv" data-cat="BEHIND THE SCENES" style="transition-delay:0.2s">
+  <div style="height:160px;background:rgba(42,171,187,.06);display:flex;align-items:center;justify-content:center;font-size:72px">
+    <span style="transition:transform .3s ease" onmouseenter="this.style.transform='scale(1.2)'" onmouseleave="this.style.transform=''">
+      🫙
+    </span>
+  </div>
+  <div style="padding:20px 22px 24px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:var(--y);color:#0D1E28;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px">BEHIND THE SCENES</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;line-height:1.2;margin-bottom:10px">The story of BMC's first kulhad</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55;margin-bottom:18px">In 2017, a chai stall in Bareilly made a decision that would define a brand: serve chai only in kulhads.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span style="font-size:11px;color:#4A6070;letter-spacing:1px">4 min read · Mar 2026</span>
+      <a href="#" style="font-family:var(--f2);font-weight:700;font-size:12px;color:var(--t);text-decoration:none;letter-spacing:1px">Read →</a>
+    </div>
+  </div>
+</div>
+
+<div class="blog-card rv" data-cat="CHAI CULTURE" style="transition-delay:0.0s">
+  <div style="height:160px;background:rgba(42,171,187,.06);display:flex;align-items:center;justify-content:center;font-size:72px">
+    <span style="transition:transform .3s ease" onmouseenter="this.style.transform='scale(1.2)'" onmouseleave="this.style.transform=''">
+      💬
+    </span>
+  </div>
+  <div style="padding:20px 22px 24px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:var(--y);color:#0D1E28;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px">CHAI CULTURE</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;line-height:1.2;margin-bottom:10px">Gup-Shup ka Adda: why conversations matter more than coffee</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55;margin-bottom:18px">While global chains competed on coffee varieties, BMC built something deeper — a place where the conversation is the product.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span style="font-size:11px;color:#4A6070;letter-spacing:1px">5 min read · Mar 2026</span>
+      <a href="#" style="font-family:var(--f2);font-weight:700;font-size:12px;color:var(--t);text-decoration:none;letter-spacing:1px">Read →</a>
+    </div>
+  </div>
+</div>
+
+<div class="blog-card rv" data-cat="FRANCHISE GUIDE" style="transition-delay:0.1s">
+  <div style="height:160px;background:rgba(42,171,187,.06);display:flex;align-items:center;justify-content:center;font-size:72px">
+    <span style="transition:transform .3s ease" onmouseenter="this.style.transform='scale(1.2)'" onmouseleave="this.style.transform=''">
+      📍
+    </span>
+  </div>
+  <div style="padding:20px 22px 24px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:var(--y);color:#0D1E28;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px">FRANCHISE GUIDE</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;line-height:1.2;margin-bottom:10px">What makes a great chai franchise location in Tier 2 cities</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55;margin-bottom:18px">Proximity to colleges, office clusters, residential areas, or transit hubs? Our team breaks down what they look for.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span style="font-size:11px;color:#4A6070;letter-spacing:1px">7 min read · Feb 2026</span>
+      <a href="#" style="font-family:var(--f2);font-weight:700;font-size:12px;color:var(--t);text-decoration:none;letter-spacing:1px">Read →</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#0D1E28;padding:80px 64px">
+  <div style="max-width:640px;margin:0 auto;text-align:center">
+    <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(28px,4vw,52px);color:#fff;line-height:.95;letter-spacing:-1.5px;margin-bottom:16px">Get chai stories<br><span style="color:var(--y)">in your inbox.</span></h2>
+    <p style="font-size:16px;color:rgba(255,255,255,.50);margin-bottom:28px">No spam. Just good reads, once a week.</p>
+    <div style="display:flex;gap:12px">
+      <input type="email" placeholder="Your email address" class="fi" style="flex:1;border-radius:100px;padding:14px 20px">
+      <button class="btn btn-y" style="font-size:12px;padding:14px 28px;border-radius:100px">Subscribe →</button>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <div style="width:50%;margin-bottom:18px"><img src="/assets/images/logo.png" alt="BMC Logo" style="width:100%;height:auto"></div>
+      <div style="font-style:italic;font-size:14px;color:rgba(255,255,255,.42);margin-bottom:8px">Gup-Shup ka Adda</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.28);line-height:1.65;margin-bottom:22px">India's most loved chefless chai franchise. Building addas across Tier 2 &amp; Tier 3 cities since 2017.</div>
+      <div style="display:flex;gap:10px">
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">📷</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">👍</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">▶️</div>
+      </div>
+    </div>
+    <div>
+      <div class="fcol-title">EXPLORE</div><div class="fcol-line"></div>
+      <a href="/index.html" class="flink">Home</a>
+<a href="/our-story.html" class="flink">Our Story</a>
+<a href="/menu.html" class="flink">Menu</a>
+<a href="/gallery.html" class="flink">Gallery</a>
+<a href="/blog.html" class="flink">Blog</a>
+    </div>
+    <div>
+      <div class="fcol-title">FRANCHISE</div><div class="fcol-line"></div>
+      <a href="/franchise.html" class="flink">Why BMC</a>
+<a href="/franchise.html#models" class="flink">Our Models</a>
+<a href="/franchise.html#form" class="flink  hi">Apply Now</a>
+<a href="#" class="flink">Download Brochure</a>
+<a href="#" class="flink">Careers</a>
+    </div>
+    <div style="min-width:0">
+      <div class="fcol-title">CONNECT</div><div class="fcol-line"></div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Head Office:</strong><br>118, Pocket D, Okhla Industrial Estate, New Delhi 110020</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Base Kitchen:</strong><br>Pilibhit Bypass, Near Bajaj Showroom, Bareilly-243122</div>
+      <a href="tel:+919990053000" style="display:block;color:var(--y);font-weight:700;font-size:14px;text-decoration:none;margin-bottom:6px;overflow-wrap:anywhere">+91 99900 53000</a>
+      <a href="mailto:info@bunmakkhanchai.com" style="display:block;color:var(--t);font-size:13px;text-decoration:none;margin-bottom:18px;overflow-wrap:anywhere">info@bunmakkhanchai.com</a>
+      <a href="https://wa.me/919990053000" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;border-radius:100px;padding:11px 18px;font-weight:700;font-size:13px;text-decoration:none;max-width:100%">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <span class="foot-copy">© 2026 Bun Makkhan Chai @ Glee Grub India Pvt. Ltd.</span>
+    <span class="foot-copy">Privacy Policy · Terms · Crafted in Bharat 🇮🇳</span>
+  </div>
+</footer>
+<a id="wa" href="https://wa.me/919990053000?text=Hi! I'm interested in BMC." target="_blank" rel="noreferrer" title="Chat on WhatsApp">💬</a>
+<script>
+function filterPosts(btn, cat){
+  document.querySelectorAll('.cat-btn').forEach(b => {
+    b.style.background='rgba(42,171,187,.08)';b.style.color='#4A6070';b.style.transform=''
+    b.classList.remove('active')
+  })
+  btn.style.background='var(--t)';btn.style.color='#fff';btn.style.transform='scale(1.05)'
+  btn.classList.add('active')
+  document.querySelectorAll('.blog-card').forEach(card => {
+    const cc = card.dataset.cat.toLowerCase()
+    const match = cat==='All' || cc.includes(cat.toLowerCase().replace(' ','_')) || cc.includes(cat.toLowerCase())
+    card.style.display = match ? 'block' : 'none'
+  })
+}
+</script>
+
+
+<script src="/js/core.js"></script>
+</body></html>

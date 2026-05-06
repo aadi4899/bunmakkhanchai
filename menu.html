@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Menu — Food for Every Mood | Bun Makkhan Chai — Booming Bharat ka Adda</title>
+  <meta name="description" content="Bun Makkhan Chai — India's most loved chefless chai franchise. Booming Bharat ka Adda. Menu from ₹25. Franchise from ₹10 Lakhs.">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  
+</head>
+<body>
+<div id="spb"></div>
+<div id="loader">
+  <div class="loader-logo">bun <span>makkhan</span> chai</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-pct">0%</div>
+</div>
+<div id="c-dot"></div>
+<div id="c-ring"></div>
+
+<nav id="main-nav">
+  <a href="/index.html" class="nav-logo"><img src="/assets/images/logo.png" alt="Bun Makkhan Chai" style="height:44px;width:auto;display:block"></a>
+  <div class="nav-links-center">
+    <a href="/our-story.html" class="nl">Our Story</a>
+<a href="/menu.html" class="nl active">Menu</a>
+<a href="/franchise.html" class="nl">Franchise</a>
+<a href="/locations.html" class="nl">Locations</a>
+<a href="/gallery.html" class="nl">Gallery</a>
+<a href="/contact.html" class="nl">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="/franchise.html#form" class="btn btn-y btn-start-adda">Start Your Adda →</a>
+    <button id="ham-btn">
+      <div style="width:22px;height:2px"></div>
+      <div style="width:22px;height:2px"></div>
+      <div style="width:16px;height:2px"></div>
+    </button>
+  </div>
+</nav>
+<div id="mob-overlay">
+  <button id="mob-close">✕</button>
+  <a href="/index.html" class="mob-link">Home</a>
+<a href="/our-story.html" class="mob-link">Our Story</a>
+<a href="/menu.html" class="mob-link">Menu</a>
+<a href="/franchise.html" class="mob-link">Franchise</a>
+<a href="/locations.html" class="mob-link">Locations</a>
+<a href="/gallery.html" class="mob-link">Gallery</a>
+<a href="/contact.html" class="mob-link">Contact</a>
+  <a href="/franchise.html#form" class="btn btn-y" style="margin-top:20px;width:260px;justify-content:center">Start Your Adda →</a>
+</div>
+
+<section class="page-hero" style="background:#FEFCE8">
+  <div class="page-hero-dots"></div>
+  <div style="max-width:1300px;margin:0 auto;width:100%;position:relative;z-index:1">
+    <div class="stag stag-dk">FOOD FOR EVERY MOOD · FROM ₹25</div>
+    <h1><div class="page-hero-line"><span style="color:#0D1E28">Food for</span></div>
+<div class="page-hero-line"><span style="color:var(--t)">Every Mood.</span></div></h1>
+    <p id="hero-sub-p" style="color:rgba(26,46,59,.65)">Chef-crafted recipes. Locally loved ingredients. Consistent quality across every outlet. Starting at ₹25.</p>
+    <div style="margin-top:36px"><a href="https://zomato.com" class="btn btn-t">Order Online <span class="btn-arr">→</span></a></div>
+  </div>
+</section>
+<script>
+(function(){
+  const gs = document.querySelectorAll('.page-hero-line span')
+  const sub = document.getElementById('hero-sub-p')
+  const tl = gsap.timeline({delay:.1})
+  gs.forEach((el,i) => tl.to(el, {y:0, opacity:1, duration:.9, ease:'power4.out'}, i===0?'+=0':'-=0.7'))
+  if(sub) tl.to(sub, {opacity:1, y:0, duration:.7, ease:'power3.out'}, '-=0.4')
+})()
+</script>
+<div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,48 C480,0 960,72 1440,24 L1440,72 L0,72 Z" fill="#FEFCE8"/></svg></div>
+
+<section style="background:#FEFCE8;padding:80px 64px">
+  <div style="max-width:1400px;margin:0 auto">
+    <div style="margin-bottom:48px">
+      <div class="stag">FULL MENU</div>
+      <div class="big-rev"><p><span class="wo"><span class="wi ">What's</span></span> <span class="wo"><span class="wi acc">cooking</span></span> <span class="wo"><span class="wi ">at</span></span> <span class="wo"><span class="wi ">your</span></span> <span class="wo"><span class="wi ">adda.</span></span></p></div>
+    </div>
+    <div style="position:sticky;top:74px;z-index:100;background:#FEFCE8;padding-bottom:24px;margin-bottom:32px;border-bottom:1px solid rgba(245,200,0,.30)">
+      <div style="display:flex;gap:12px;flex-wrap:wrap"><button type="button" class="menu-tab  active" data-tab="Hot Chai" onclick="switchTab(this,'Hot Chai')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:var(--t);color:#fff;transform:scale(1.05);box-shadow:0 4px 20px rgba(42,171,187,.35)">Hot Chai</button>
+<button type="button" class="menu-tab" data-tab="Cold Drinks" onclick="switchTab(this,'Cold Drinks')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070">Cold Drinks</button>
+<button type="button" class="menu-tab" data-tab="Bun & Snacks" onclick="switchTab(this,'Bun & Snacks')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070">Bun & Snacks</button>
+<button type="button" class="menu-tab" data-tab="Full Meals" onclick="switchTab(this,'Full Meals')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070">Full Meals</button></div>
+    </div>
+    <div id="tab-HotChai" class="menu-tab-content" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/kulhad-chai.svg" onerror="this.src='/assets/food/_default.svg'" alt="Kulhad Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹25</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Chef's Pick</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Kulhad Chai</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">The original. Kadak, creamy, perfectly spiced. Served in a traditional kulhad.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.1s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/masala-chai.svg" onerror="this.src='/assets/food/_default.svg'" alt="Masala Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹30</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Masala Chai</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Chef-blended masala mix brewed slow. Every cup is a complete ritual.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.2s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/adrak-chai.svg" onerror="this.src='/assets/food/_default.svg'" alt="Adrak Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹25</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Adrak Chai</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Bold fresh ginger. The one that clears your head and your thoughts.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/elaichi-chai.svg" onerror="this.src='/assets/food/_default.svg'" alt="Elaichi Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹25</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Elaichi Chai</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Delicate cardamom. For the moments you actually slow down.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.1s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/kashmiri-chai.svg" onerror="this.src='/assets/food/_default.svg'" alt="Kashmiri Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹45</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Kashmiri Chai</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Pink, creamy, fragrant. A cup genuinely worth savouring.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.2s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/special-bmc-chai.svg" onerror="this.src='/assets/food/_default.svg'" alt="Special BMC Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹40</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Chef's Pick</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Special BMC Chai</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Our house signature blend. Proprietary recipe. You will know why it is special.</p>
+  </div>
+</div></div>
+<div id="tab-ColdDrinks" class="menu-tab-content" style="display:none;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/cold-coffee.svg" onerror="this.src='/assets/food/_default.svg'" alt="Cold Coffee" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹60</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Cold Coffee</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Rich, chilled, a little indulgent. The kind you regret not ordering earlier.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.1s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/bmc-special-shake.svg" onerror="this.src='/assets/food/_default.svg'" alt="BMC Special Shake" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹80</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Seasonal</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">BMC Special Shake</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Thick, creamy, seasonal flavours rotating every month.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.2s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/lemon-soda.svg" onerror="this.src='/assets/food/_default.svg'" alt="Lemon Soda" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹35</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Lemon Soda</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Fresh lime, soda, and a pinch of chaat masala. Classic.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/mango-lassi.svg" onerror="this.src='/assets/food/_default.svg'" alt="Mango Lassi" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹55</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Mango Lassi</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Seasonal Alphonso mango blended with fresh curd. Thick and cold.</p>
+  </div>
+</div></div>
+<div id="tab-BunSnacks" class="menu-tab-content" style="display:none;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/bun-makkhan.svg" onerror="this.src='/assets/food/_default.svg'" alt="Bun Makkhan" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹30</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Bestseller</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Bun Makkhan</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">The namesake. Soft bun, salted butter, a sprinkle of nostalgia.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.1s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/mumbai-chutney-sandwich.svg" onerror="this.src='/assets/food/_default.svg'" alt="Mumbai Chutney Sandwich" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹59</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Mumbai Chutney Sandwich</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Our bake on the humble Mumbai sandwich. Green chutney, veggies, spiced.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.2s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/vada-pao.svg" onerror="this.src='/assets/food/_default.svg'" alt="Vada Pao" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹40</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Bestseller</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Vada Pao</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Spiced potato in a crispy batter, tucked in a soft pao.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/aloo-paratha.svg" onerror="this.src='/assets/food/_default.svg'" alt="Aloo Paratha" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹55</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Aloo Paratha</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Stuffed whole wheat, pan-grilled, served with pickle and curd.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.1s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/maggi.svg" onerror="this.src='/assets/food/_default.svg'" alt="Maggi" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹45</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Maggi</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Not just Maggi. BMC-spiced, loaded, with optional egg.</p>
+  </div>
+</div></div>
+<div id="tab-FullMeals" class="menu-tab-content" style="display:none;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/chilli-cheese-burst-burger.svg" onerror="this.src='/assets/food/_default.svg'" alt="Chilli Cheese Burst Burger" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹89</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Customer Fav</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Chilli Cheese Burst Burger</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Veggy patty, melted cheese core, toasted bun. Every bite, a surprise.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.1s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/nachos.svg" onerror="this.src='/assets/food/_default.svg'" alt="Nachos" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹79</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Nachos</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Mexican maize meets Indian craze. Jalapeños, salsa, and our house dip.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.2s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/pasta-china-town.svg" onerror="this.src='/assets/food/_default.svg'" alt="Pasta China Town" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹99</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    <span style="display:inline-block;padding:3px 10px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Chef's Pick</span>
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Pasta China Town</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Chilli paneer with penne pasta. The fusion that just works.</p>
+  </div>
+</div>
+
+<div class="rv" style="transition-delay:0.0s;background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(245,200,0,.25);transition:all .32s cubic-bezier(.34,1.56,.64,1);cursor:default"
+  onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
+  onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
+  <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
+    <img src="/assets/food/paneer-tikka-roll.svg" onerror="this.src='/assets/food/_default.svg'" alt="Paneer Tikka Roll" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+      onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
+    <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹85</div>
+    <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
+  </div>
+  <div style="padding:16px 20px 20px">
+    
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:18px;color:#0D1E28;margin-bottom:6px;line-height:1.2">Paneer Tikka Roll</h3>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55">Chargrilled paneer, mint chutney, thin paratha. Street food elevated.</p>
+  </div>
+</div></div>
+    <div style="text-align:center;margin-top:48px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="https://zomato.com" target="_blank" rel="noreferrer" class="btn btn-t">Order on Zomato <span class="btn-arr">→</span></a>
+      <a href="https://swiggy.com" target="_blank" rel="noreferrer" class="btn btn-dk">Order on Swiggy <span class="btn-arr">→</span></a>
+      <a href="/locations.html" class="btn" style="background:rgba(42,171,187,.10);color:#2AABBB;border:1.5px solid rgba(42,171,187,.30)">Visit Us In Person</a>
+    </div>
+  </div>
+</section>
+<div class="wave-wrap"><svg style="background: #fefce8;" viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,20 C240,68 600,0 900,48 C1200,68 1320,20 1440,36 L1440,72 L0,72 Z" fill="#2AABBB"/></svg></div>
+
+<!-- Chef note -->
+<section style="background:#2AABBB;padding:80px 64px">
+  <div style="max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
+    <div class="rl">
+      <div class="stag stag-w">THE RECIPE PROMISE</div>
+      <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(32px,4.5vw,64px);color:#fff;line-height:.95;letter-spacing:-1.5px;margin-bottom:24px">Every recipe.<br><span style="color:var(--y)">Locked by India's<br>finest chefs.</span></h2>
+      <p style="font-size:17px;color:rgba(255,255,255,.78);line-height:1.75;margin-bottom:24px">Before any BMC outlet opens, every recipe goes through rigorous testing by our culinary team. What reaches your cup has been perfected, standardised, and approved.</p>
+      <p style="font-size:17px;color:rgba(255,255,255,.78);line-height:1.75">The taste you love in Bareilly is the exact taste you'll find in Bhopal, Kanpur, or Jodhpur. That's the promise. That's the system.</p>
+    </div>
+    <div class="rr" style="display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.10);border-radius:14px;padding:16px 20px;border:1px solid rgba(255,255,255,.15)"><span style="width:36px;height:36px;border-radius:50%;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0">✓</span><span style="font-family:var(--f1);font-weight:800;font-size:16px;color:#fff">Recipes crafted by certified culinary experts</span></div><div style="display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.10);border-radius:14px;padding:16px 20px;border:1px solid rgba(255,255,255,.15)"><span style="width:36px;height:36px;border-radius:50%;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0">✓</span><span style="font-family:var(--f1);font-weight:800;font-size:16px;color:#fff">Standardised across all 4 outlets</span></div><div style="display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.10);border-radius:14px;padding:16px 20px;border:1px solid rgba(255,255,255,.15)"><span style="width:36px;height:36px;border-radius:50%;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0">✓</span><span style="font-family:var(--f1);font-weight:800;font-size:16px;color:#fff">Quality tested & batch-approved</span></div><div style="display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.10);border-radius:14px;padding:16px 20px;border:1px solid rgba(255,255,255,.15)"><span style="width:36px;height:36px;border-radius:50%;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0">✓</span><span style="font-family:var(--f1);font-weight:800;font-size:16px;color:#fff">No compromise on taste. Ever.</span></div>
+    </div>
+  </div>
+</section>
+<div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,36 C360,72 1080,0 1440,48 L1440,72 L0,72 Z" fill="#ffffff"/></svg></div>
+
+<section style="background:#fff;padding:100px 64px;text-align:center">
+  <div style="max-width:700px;margin:0 auto">
+    <div class="stag stag-dk" style="justify-content:center">READY TO TASTE IT?</div>
+    <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(36px,5.5vw,72px);color:#0D1E28;line-height:.95;letter-spacing:-2px;margin-bottom:20px">Come taste it<br><span style="color:var(--y)">in person.</span></h2>
+    <p style="font-size:18px;color:rgba(26,46,59,.72);margin-bottom:36px">3 outlets in Bareilly. 500+ cups served daily. Come join the gup-shup.</p>
+    <a href="/locations.html" class="btn btn-t" style="font-size:14px;padding:16px 44px">Find Nearest Adda <span class="btn-arr">→</span></a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <div style="width:50%;margin-bottom:18px"><img src="/assets/images/logo.png" alt="BMC Logo" style="width:100%;height:auto"></div>
+      <div style="font-style:italic;font-size:14px;color:rgba(255,255,255,.42);margin-bottom:8px">Gup-Shup ka Adda</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.28);line-height:1.65;margin-bottom:22px">India's most loved chefless chai franchise. Building addas across Tier 2 &amp; Tier 3 cities since 2017.</div>
+      <div style="display:flex;gap:10px">
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">📷</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">👍</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">▶️</div>
+      </div>
+    </div>
+    <div>
+      <div class="fcol-title">EXPLORE</div><div class="fcol-line"></div>
+      <a href="/index.html" class="flink">Home</a>
+<a href="/our-story.html" class="flink">Our Story</a>
+<a href="/menu.html" class="flink">Menu</a>
+<a href="/gallery.html" class="flink">Gallery</a>
+<a href="/blog.html" class="flink">Blog</a>
+    </div>
+    <div>
+      <div class="fcol-title">FRANCHISE</div><div class="fcol-line"></div>
+      <a href="/franchise.html" class="flink">Why BMC</a>
+<a href="/franchise.html#models" class="flink">Our Models</a>
+<a href="/franchise.html#form" class="flink  hi">Apply Now</a>
+<a href="#" class="flink">Download Brochure</a>
+<a href="#" class="flink">Careers</a>
+    </div>
+    <div style="min-width:0">
+      <div class="fcol-title">CONNECT</div><div class="fcol-line"></div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Head Office:</strong><br>118, Pocket D, Okhla Industrial Estate, New Delhi 110020</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Base Kitchen:</strong><br>Pilibhit Bypass, Near Bajaj Showroom, Bareilly-243122</div>
+      <a href="tel:+919990053000" style="display:block;color:var(--y);font-weight:700;font-size:14px;text-decoration:none;margin-bottom:6px;overflow-wrap:anywhere">+91 99900 53000</a>
+      <a href="mailto:info@bunmakkhanchai.com" style="display:block;color:var(--t);font-size:13px;text-decoration:none;margin-bottom:18px;overflow-wrap:anywhere">info@bunmakkhanchai.com</a>
+      <a href="https://wa.me/919990053000" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;border-radius:100px;padding:11px 18px;font-weight:700;font-size:13px;text-decoration:none;max-width:100%">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <span class="foot-copy">© 2026 Bun Makkhan Chai @ Glee Grub India Pvt. Ltd.</span>
+    <span class="foot-copy">Privacy Policy · Terms · Crafted in Bharat 🇮🇳</span>
+  </div>
+</footer>
+<a id="wa" href="https://wa.me/919990053000?text=Hi! I'm interested in BMC." target="_blank" rel="noreferrer" title="Chat on WhatsApp">💬</a>
+<script>
+function switchTab(btn, tab) {
+  document.querySelectorAll('.menu-tab').forEach(b => {
+    b.style.cssText = 'padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070'
+    b.classList.remove('active')
+  })
+  btn.style.cssText = 'padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:var(--t);color:#fff;transform:scale(1.05);box-shadow:0 4px 20px rgba(42,171,187,.35)'
+  btn.classList.add('active')
+  document.querySelectorAll('.menu-tab-content').forEach(el => el.style.display='none')
+  const el = document.getElementById('tab-' + tab.replace(/ /g,'').replace('&',''))
+  if(el) { el.style.display='grid'; el.style.gridTemplateColumns='repeat(auto-fit,minmax(240px,1fr))'; el.style.gap='24px' }
+}
+</script>
+
+
+<script src="/js/core.js"></script>
+</body></html>

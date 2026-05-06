@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Nearest BMC Adda — Locations | Bun Makkhan Chai — Booming Bharat ka Adda</title>
+  <meta name="description" content="Bun Makkhan Chai — India's most loved chefless chai franchise. Booming Bharat ka Adda. Menu from ₹25. Franchise from ₹10 Lakhs.">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  
+</head>
+<body>
+<div id="spb"></div>
+<div id="loader">
+  <div class="loader-logo">bun <span>makkhan</span> chai</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-pct">0%</div>
+</div>
+<div id="c-dot"></div>
+<div id="c-ring"></div>
+
+<nav id="main-nav">
+  <a href="/index.html" class="nav-logo"><img src="/assets/images/logo.png" alt="Bun Makkhan Chai" style="height:44px;width:auto;display:block"></a>
+  <div class="nav-links-center">
+    <a href="/our-story.html" class="nl">Our Story</a>
+<a href="/menu.html" class="nl">Menu</a>
+<a href="/franchise.html" class="nl">Franchise</a>
+<a href="/locations.html" class="nl active">Locations</a>
+<a href="/gallery.html" class="nl">Gallery</a>
+<a href="/contact.html" class="nl">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="/franchise.html#form" class="btn btn-y btn-start-adda">Start Your Adda →</a>
+    <button id="ham-btn">
+      <div style="width:22px;height:2px"></div>
+      <div style="width:22px;height:2px"></div>
+      <div style="width:16px;height:2px"></div>
+    </button>
+  </div>
+</nav>
+<div id="mob-overlay">
+  <button id="mob-close">✕</button>
+  <a href="/index.html" class="mob-link">Home</a>
+<a href="/our-story.html" class="mob-link">Our Story</a>
+<a href="/menu.html" class="mob-link">Menu</a>
+<a href="/franchise.html" class="mob-link">Franchise</a>
+<a href="/locations.html" class="mob-link">Locations</a>
+<a href="/gallery.html" class="mob-link">Gallery</a>
+<a href="/contact.html" class="mob-link">Contact</a>
+  <a href="/franchise.html#form" class="btn btn-y" style="margin-top:20px;width:260px;justify-content:center">Start Your Adda →</a>
+</div>
+
+<section class="page-hero" style="background:#ffffff">
+  <div class="page-hero-dots"></div>
+  <div style="max-width:1300px;margin:0 auto;width:100%;position:relative;z-index:1">
+    <div class="stag ">FIND YOUR ADDA · BAREILLY, UP</div>
+    <h1><div class="page-hero-line"><span style="color:#0D1E28">Apne Adde.</span></div></h1>
+    <p id="hero-sub-p" style="color:rgba(26,46,59,.65)">3 outlets. 500+ cups served daily. Come join the gup-shup — and watch us come to your city next.</p>
+    
+  </div>
+</section>
+<script>
+(function(){
+  const gs = document.querySelectorAll('.page-hero-line span')
+  const sub = document.getElementById('hero-sub-p')
+  const tl = gsap.timeline({delay:.1})
+  gs.forEach((el,i) => tl.to(el, {y:0, opacity:1, duration:.9, ease:'power4.out'}, i===0?'+=0':'-=0.7'))
+  if(sub) tl.to(sub, {opacity:1, y:0, duration:.7, ease:'power3.out'}, '-=0.4')
+})()
+</script>
+<div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,48 C480,0 960,72 1440,24 L1440,72 L0,72 Z" fill="#F5C800"/></svg></div>
+
+<section style="background:var(--y);padding:100px 64px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(42,171,187,.12) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none"></div>
+  <div style="max-width:1400px;margin:0 auto;position:relative;z-index:1">
+    <div style="margin-bottom:56px">
+      <div class="stag stag-dk">OUR OUTLETS</div>
+      <div class="big-rev"><p><span class="wo"><span class="wi ">Find</span></span> <span class="wo"><span class="wi ">the</span></span> <span class="wo"><span class="wi acc">adda</span></span> <span class="wo"><span class="wi ">nearest</span></span> <span class="wo"><span class="wi ">to</span></span> <span class="wo"><span class="wi ">you.</span></span></p></div>
+      <p style="font-size:16px;color:rgba(26,46,59,.60);margin-top:14px;max-width:600px;line-height:1.65">Gup-Shup ka adde teine kore meni khulle vaale har. Objects in the mirror are closer than they appear!</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px">
+      
+<div class="loc-card rv" style="transition-delay:0.0s"
+  onmouseenter="this.style.transform='translateY(-10px)';this.style.boxShadow='0 24px 60px rgba(42,171,187,.28)'"
+  onmouseleave="this.style.transform='';this.style.boxShadow='none'">
+  <div style="height:140px;background:rgba(42,171,187,.07);display:flex;align-items:center;justify-content:center;font-size:64px;position:relative">
+    🏛️
+    <div style="position:absolute;top:10px;right:12px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:11px;padding:4px 12px;border-radius:100px">Since 2019</div>
+  </div>
+  <div style="padding:24px">
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:20px;color:#0D1E28;margin-bottom:4px">BMC Rampur Garden</h3>
+    <div style="display:inline-flex;align-items:center;gap:6px;padding:3px 12px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">📍 Rampur Garden, Bareilly</div>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55;margin-bottom:8px">35J, 14, opposite Indian Oil Bhavan, Rampur Gardens, Bareilly, Uttar Pradesh 243001</p>
+    <div style="display:flex;align-items:center;gap:6px;font-size:13px;color:#4A6070;margin-bottom:4px">🕐 7:00 AM – 10:30 PM · All Days</div>
+    <div style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--t);font-weight:600;margin-bottom:4px">👥 200+ customers/day</div>
+    <a href="tel:+91 99900 53000" style="display:flex;align-items:center;gap:6px;font-size:13px;color:#0D1E28;font-weight:700;text-decoration:none;margin-bottom:18px">📞 +91 99900 53000</a>
+    <div style="display:flex;gap:10px">
+      <a href="https://maps.google.com?q=Rampur+Garden+Bareilly+UP" target="_blank" rel="noreferrer" class="btn btn-t" style="font-size:11px;padding:10px 18px">Get Directions →</a>
+      <a href="https://zomato.com" target="_blank" rel="noreferrer" class="btn btn-dk" style="font-size:11px;padding:10px 18px">Order Online</a>
+    </div>
+  </div>
+</div>
+
+<div class="loc-card rv" style="transition-delay:0.12s"
+  onmouseenter="this.style.transform='translateY(-10px)';this.style.boxShadow='0 24px 60px rgba(42,171,187,.28)'"
+  onmouseleave="this.style.transform='';this.style.boxShadow='none'">
+  <div style="height:140px;background:rgba(42,171,187,.07);display:flex;align-items:center;justify-content:center;font-size:64px;position:relative">
+    🏛️
+    <div style="position:absolute;top:10px;right:12px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:11px;padding:4px 12px;border-radius:100px">Since 2020</div>
+  </div>
+  <div style="padding:24px">
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:20px;color:#0D1E28;margin-bottom:4px">BMC DD Puram</h3>
+    <div style="display:inline-flex;align-items:center;gap:6px;padding:3px 12px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">📍 Deen Dayal Puram, Bareilly</div>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55;margin-bottom:8px">Shyam Puram, Near Amritsar Eye Centre, Deen Dayal Puram, Bareilly, UP 243005</p>
+    <div style="display:flex;align-items:center;gap:6px;font-size:13px;color:#4A6070;margin-bottom:4px">🕐 7:00 AM – 10:30 PM · All Days</div>
+    <div style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--t);font-weight:600;margin-bottom:4px">👥 150+ customers/day</div>
+    <a href="tel:+91 99900 53000" style="display:flex;align-items:center;gap:6px;font-size:13px;color:#0D1E28;font-weight:700;text-decoration:none;margin-bottom:18px">📞 +91 99900 53000</a>
+    <div style="display:flex;gap:10px">
+      <a href="https://maps.google.com?q=DD+Puram+Bareilly+UP" target="_blank" rel="noreferrer" class="btn btn-t" style="font-size:11px;padding:10px 18px">Get Directions →</a>
+      <a href="https://zomato.com" target="_blank" rel="noreferrer" class="btn btn-dk" style="font-size:11px;padding:10px 18px">Order Online</a>
+    </div>
+  </div>
+</div>
+
+<div class="loc-card rv" style="transition-delay:0.24s"
+  onmouseenter="this.style.transform='translateY(-10px)';this.style.boxShadow='0 24px 60px rgba(42,171,187,.28)'"
+  onmouseleave="this.style.transform='';this.style.boxShadow='none'">
+  <div style="height:140px;background:rgba(42,171,187,.07);display:flex;align-items:center;justify-content:center;font-size:64px;position:relative">
+    🏛️
+    <div style="position:absolute;top:10px;right:12px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:11px;padding:4px 12px;border-radius:100px">Since 2022</div>
+  </div>
+  <div style="padding:24px">
+    <h3 style="font-family:var(--f1);font-weight:900;font-size:20px;color:#0D1E28;margin-bottom:4px">BMC Pilibhit Bypass</h3>
+    <div style="display:inline-flex;align-items:center;gap:6px;padding:3px 12px;border-radius:100px;background:rgba(42,171,187,.10);color:var(--t);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">📍 Tulapur, Bareilly</div>
+    <p style="font-size:13px;color:#4A6070;line-height:1.55;margin-bottom:8px">Pilibhit Bypass Road, Near Bajaj Showroom, Tulapur, Bareilly-243122 U.P.</p>
+    <div style="display:flex;align-items:center;gap:6px;font-size:13px;color:#4A6070;margin-bottom:4px">🕐 7:00 AM – 10:30 PM · All Days</div>
+    <div style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--t);font-weight:600;margin-bottom:4px">👥 175+ customers/day</div>
+    <a href="tel:+91 99900 53000" style="display:flex;align-items:center;gap:6px;font-size:13px;color:#0D1E28;font-weight:700;text-decoration:none;margin-bottom:18px">📞 +91 99900 53000</a>
+    <div style="display:flex;gap:10px">
+      <a href="https://maps.google.com?q=Pilibhit+Bypass+Bareilly+UP" target="_blank" rel="noreferrer" class="btn btn-t" style="font-size:11px;padding:10px 18px">Get Directions →</a>
+      <a href="https://zomato.com" target="_blank" rel="noreferrer" class="btn btn-dk" style="font-size:11px;padding:10px 18px">Order Online</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none" style="background: #F5C800;"><path d="M0,36 C360,72 1080,0 1440,48 L1440,72 L0,72 Z" fill="#1cb1cd "/></svg></div>
+
+<section style="background:#1cb1cd;padding:100px 64px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(42,171,187,.08) 1px,transparent 1px);background-size:32px 32px;pointer-events:none"></div>
+  <div style="max-width:1400px;margin:0 auto;position:relative;z-index:1">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
+      <div class="rl">
+        <div class="stag stag-w">EXPANDING TO YOUR CITY</div>
+        <h2 style="font-family:var(--f1);font-weight:900;font-size:clamp(36px,5vw,72px);color:#fff;line-height:.92;letter-spacing:-2px;margin-bottom:24px">Booming Bharat,<br><span style="color:var(--y)">one adda at a time.</span></h2>
+        <p style="font-size:17px;color:rgba(255,255,255,.62);line-height:1.75;margin-bottom:32px">We are actively expanding to Tier 2 and Tier 3 cities across India. Objects in the mirror are much closer than they appear. Is your city next?</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px"><span style="padding:8px 18px;border-radius:100px;background:rgb(255, 255, 255);color:#000;font-family:var(--f2);font-weight:700;font-size:13px;border:1px solid rgba(245,200,0,.20)">Lucknow, UP</span>
+<span style="padding:8px 18px;border-radius:100px;background:rgb(255, 255, 255);color:#000;font-family:var(--f2);font-weight:700;font-size:13px;border:1px solid rgba(245,200,0,.20)">Kanpur, UP</span>
+<span style="padding:8px 18px;border-radius:100px;background:rgb(255, 255, 255);color:#000;font-family:var(--f2);font-weight:700;font-size:13px;border:1px solid rgba(245,200,0,.20)">Agra, UP</span>
+<span style="padding:8px 18px;border-radius:100px;background:rgb(255, 255, 255);color:#000;font-family:var(--f2);font-weight:700;font-size:13px;border:1px solid rgba(245,200,0,.20)">Haldwani, UK</span>
+<span style="padding:8px 18px;border-radius:100px;background:rgb(255, 255, 255);color:#000;font-family:var(--f2);font-weight:700;font-size:13px;border:1px solid rgba(245,200,0,.20)">Moradabad, UP</span>
+<span style="padding:8px 18px;border-radius:100px;background:rgb(255, 255, 255);color:#000;font-family:var(--f2);font-weight:700;font-size:13px;border:1px solid rgba(245,200,0,.20)">Jhansi, UP</span></div>
+        <a href="/franchise.html" class="btn btn-y">Own a BMC in Your City <span class="btn-arr">→</span></a>
+      </div>
+      <div class="rr">
+        <div style="background:rgba(255,255,255,.04);border-radius:24px;padding:40px;border:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgb(255, 255, 255);margin-bottom:16px">NOTIFY ME WHEN BMC OPENS NEAR ME</div>
+          <input type="text" placeholder="Your city name" class="fi" style="margin-bottom:12px">
+          <input type="email" placeholder="Your email address" class="fi" style="margin-bottom:16px">
+          <button onclick="alert('Got it! We\'ll notify you when BMC opens near you.')" style="width:100%;padding:14px;border-radius:100px;background:var(--y);color:#0D1E28;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;border:none;cursor:none;transition:all .25s"
+            onmouseenter="this.style.transform='scale(1.02)'" onmouseleave="this.style.transform=''">Notify Me →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <div style="width:50%;margin-bottom:18px"><img src="/assets/images/logo.png" alt="BMC Logo" style="width:100%;height:auto"></div>
+      <div style="font-style:italic;font-size:14px;color:rgba(255,255,255,.42);margin-bottom:8px">Gup-Shup ka Adda</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.28);line-height:1.65;margin-bottom:22px">India's most loved chefless chai franchise. Building addas across Tier 2 &amp; Tier 3 cities since 2017.</div>
+      <div style="display:flex;gap:10px">
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">📷</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">👍</div>
+        <div style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:15px">▶️</div>
+      </div>
+    </div>
+    <div>
+      <div class="fcol-title">EXPLORE</div><div class="fcol-line"></div>
+      <a href="/index.html" class="flink">Home</a>
+<a href="/our-story.html" class="flink">Our Story</a>
+<a href="/menu.html" class="flink">Menu</a>
+<a href="/gallery.html" class="flink">Gallery</a>
+<a href="/blog.html" class="flink">Blog</a>
+    </div>
+    <div>
+      <div class="fcol-title">FRANCHISE</div><div class="fcol-line"></div>
+      <a href="/franchise.html" class="flink">Why BMC</a>
+<a href="/franchise.html#models" class="flink">Our Models</a>
+<a href="/franchise.html#form" class="flink  hi">Apply Now</a>
+<a href="#" class="flink">Download Brochure</a>
+<a href="#" class="flink">Careers</a>
+    </div>
+    <div style="min-width:0">
+      <div class="fcol-title">CONNECT</div><div class="fcol-line"></div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Head Office:</strong><br>118, Pocket D, Okhla Industrial Estate, New Delhi 110020</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.40);line-height:1.7;margin-bottom:14px"><strong style="color:rgba(255,255,255,.58);font-weight:600">Base Kitchen:</strong><br>Pilibhit Bypass, Near Bajaj Showroom, Bareilly-243122</div>
+      <a href="tel:+919990053000" style="display:block;color:var(--y);font-weight:700;font-size:14px;text-decoration:none;margin-bottom:6px;overflow-wrap:anywhere">+91 99900 53000</a>
+      <a href="mailto:info@bunmakkhanchai.com" style="display:block;color:var(--t);font-size:13px;text-decoration:none;margin-bottom:18px;overflow-wrap:anywhere">info@bunmakkhanchai.com</a>
+      <a href="https://wa.me/919990053000" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;border-radius:100px;padding:11px 18px;font-weight:700;font-size:13px;text-decoration:none;max-width:100%">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <span class="foot-copy">© 2026 Bun Makkhan Chai @ Glee Grub India Pvt. Ltd.</span>
+    <span class="foot-copy">Privacy Policy · Terms · Crafted in Bharat 🇮🇳</span>
+  </div>
+</footer>
+<a id="wa" href="https://wa.me/919990053000?text=Hi! I'm interested in BMC." target="_blank" rel="noreferrer" title="Chat on WhatsApp">💬</a>
+
+
+<script src="/js/core.js"></script>
+</body></html>
