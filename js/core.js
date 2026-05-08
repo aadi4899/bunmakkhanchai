@@ -168,3 +168,49 @@
     if (href === path) a.classList.add('active')
   })
 })()
+
+/* Mobile sliders for card grids */
+;(function(){
+  const MOBILE_QUERY = '(max-width: 768px)'
+  const SELECTOR = [
+    '[style*="grid-template-columns:repeat(auto-fit"]',
+    '[style*="grid-template-columns:repeat(4,1fr)"]',
+    '#blog-grid',
+    '.proof-grid'
+  ].join(',')
+
+  function shouldSkip(el){
+    if (!el) return true
+    if (el.classList.contains('menu-tab-content')) return true
+    if (el.closest('.menu-tab-content')) return true
+    if (el.querySelector('input,textarea,select')) return true
+    return false
+  }
+
+  function applyMobileSlider(el){
+    if (shouldSkip(el)) return
+    const slides = Array.from(el.children).filter(child => child.nodeType === 1)
+    if (slides.length < 2) return
+    el.classList.add('mobile-slider')
+    slides.forEach(child => child.classList.add('mobile-slide-item'))
+  }
+
+  function removeMobileSlider(el){
+    el.classList.remove('mobile-slider')
+    Array.from(el.children).forEach(child => {
+      if (child.nodeType === 1) child.classList.remove('mobile-slide-item')
+    })
+  }
+
+  function sync(){
+    const isMobile = window.matchMedia(MOBILE_QUERY).matches
+    document.querySelectorAll(SELECTOR).forEach(el => {
+      if (isMobile) applyMobileSlider(el)
+      else removeMobileSlider(el)
+    })
+  }
+
+  sync()
+  window.addEventListener('resize', sync)
+  new MutationObserver(sync).observe(document.body, { childList:true, subtree:true })
+})()

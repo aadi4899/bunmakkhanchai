@@ -83,8 +83,8 @@
       <div class="stag">FULL MENU</div>
       <div class="big-rev"><p><span class="wo"><span class="wi ">What's</span></span> <span class="wo"><span class="wi acc">cooking</span></span> <span class="wo"><span class="wi ">at</span></span> <span class="wo"><span class="wi ">your</span></span> <span class="wo"><span class="wi ">adda.</span></span></p></div>
     </div>
-    <div style="position:sticky;top:74px;z-index:100;background:#FEFCE8;padding-bottom:24px;margin-bottom:32px;border-bottom:1px solid rgba(245,200,0,.30)">
-      <div style="display:flex;gap:12px;flex-wrap:wrap"><button type="button" class="menu-tab  active" data-tab="Hot Chai" onclick="switchTab(this,'Hot Chai')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:var(--t);color:#fff;transform:scale(1.05);box-shadow:0 4px 20px rgba(42,171,187,.35)">Hot Chai</button>
+    <div class="menu-tabs-sticky" style="position:sticky;top:74px;z-index:100;background:#FEFCE8;padding-bottom:24px;margin-bottom:32px;border-bottom:1px solid rgba(245,200,0,.30)">
+      <div class="menu-tabs-row" style="display:flex;gap:12px;flex-wrap:wrap"><button type="button" class="menu-tab  active" data-tab="Hot Chai" onclick="switchTab(this,'Hot Chai')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:var(--t);color:#fff;transform:scale(1.05);box-shadow:0 4px 20px rgba(42,171,187,.35)">Hot Chai</button>
 <button type="button" class="menu-tab" data-tab="Cold Drinks" onclick="switchTab(this,'Cold Drinks')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070">Cold Drinks</button>
 <button type="button" class="menu-tab" data-tab="Bun & Snacks" onclick="switchTab(this,'Bun & Snacks')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070">Bun & Snacks</button>
 <button type="button" class="menu-tab" data-tab="Full Meals" onclick="switchTab(this,'Full Meals')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070">Full Meals</button></div>
@@ -481,10 +481,27 @@ function switchTab(btn, tab) {
   btn.classList.add('active')
   document.querySelectorAll('.menu-tab-content').forEach(el => el.style.display='none')
   const el = document.getElementById('tab-' + tab.replace(/ /g,'').replace('&',''))
-  if(el) { el.style.display='grid'; el.style.gridTemplateColumns='repeat(auto-fit,minmax(240px,1fr))'; el.style.gap='24px' }
+  if (!el) return
+
+  const isMobile = window.matchMedia('(max-width: 768px)').matches
+  if (isMobile) {
+    el.style.display = 'grid'
+    el.style.gridTemplateColumns = '1fr'
+    el.style.gap = '14px'
+  } else {
+    el.style.display = 'grid'
+    el.style.gridTemplateColumns = 'repeat(auto-fit,minmax(240px,1fr))'
+    el.style.gap = '24px'
+  }
 }
+
+window.addEventListener('resize', () => {
+  const activeBtn = document.querySelector('.menu-tab.active')
+  if (activeBtn) switchTab(activeBtn, activeBtn.dataset.tab || 'Hot Chai')
+})
 </script>
 
 
 <script src="./js/core.js"></script>
 </body></html>
+
