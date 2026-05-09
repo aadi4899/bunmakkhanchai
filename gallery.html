@@ -17,16 +17,16 @@
 </head>
 <body>
 <div id="spb"></div>
-<div id="loader">
+<!-- <div id="loader">
   <div class="loader-logo">bun <span>makkhan</span> chai</div>
   <div class="loader-bar"><div class="loader-fill"></div></div>
   <div class="loader-pct">0%</div>
-</div>
+</div> -->
 <div id="c-dot"></div>
 <div id="c-ring"></div>
 
 <nav id="main-nav">
-  <a href="./index.html" class="nav-logo"><img src="./assets/images/logo.png" alt="Bun Makkhan Chai" style="height:44px;width:auto;display:block"></a>
+<a href="./index.html" class="nav-logo"><img class="nv-logo" src="./assets/images/logo.png" alt="Bun Makkhan Chai" style="height:124px;width:auto;display:block;position: absolute;top:4px"></a>
   <div class="nav-links-center">
     <a href="./our-story.html" class="nl">Our Story</a>
 <a href="./menu.html" class="nl">Menu</a>
@@ -83,130 +83,494 @@
       <div class="big-rev"><p><span class="wo"><span class="wi acc">Real</span></span> <span class="wo"><span class="wi ">addas.</span></span> <span class="wo"><span class="wi acc">Real</span></span> <span class="wo"><span class="wi ">stories.</span></span> <span class="wo"><span class="wi acc">Real</span></span> <span class="wo"><span class="wi ">chai.</span></span></p></div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:16px">
-      
-<div class="gal-item rv" style="grid-row-end:span 2;background:var(--y);font-size:80px;transition-delay:0.0s;cursor:none"
+<div class="gal-item rv"
+  style="grid-row-end:span 2;background:var(--y);font-size:80px;transition-delay:0.0s;cursor:none;position:relative;overflow:hidden"
+
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('🏪','Outlet Exterior','Outlets')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">🏪</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Outlet Exterior</div>
+
+  onclick="openLightbox(
+    '🏪',
+    'Outlet Exterior',
+    'Outlets',
+    './assets/adda/30.jpg'
+  )">
+
+  <!-- IMAGE -->
+  <img 
+    src="./assets/adda/30.jpg"
+    alt="Outlet Exterior"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <!-- OVERLAY -->
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <!-- TITLE -->
+  <div style="
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:12px 16px;
+    color:#fff;
+    font-family:var(--f1);
+    font-weight:900;
+    font-size:13px;
+    z-index:2;
+  ">
+    Outlet Exterior
+  </div>
+
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:var(--t);font-size:56px;transition-delay:0.08s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--t);font-size:56px;transition-delay:0.08s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('☕','Kulhad Chai','Food')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">☕</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Kulhad Chai</div>
+  onclick="openLightbox('','Kulhad Chai','Food','./assets/food/Chai  - Bun Makkhan Chai.jpg')">
+
+  <img 
+    src="./assets/food/Chai  - Bun Makkhan Chai.jpg"
+    alt="Kulhad Chai"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    Kulhad Chai
+  </div>
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.16s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.16s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('👥','Happy Customers','People')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">👥</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Happy Customers</div>
+  onclick="openLightbox('','Happy Customers','People','./assets/adda/h2.png')">
+
+  <img 
+    src="./assets/adda/h2.png"
+    alt="Happy Customers"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    Happy Customers
+  </div>
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:var(--y);font-size:56px;transition-delay:0.24s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--y);font-size:56px;transition-delay:0.24s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('🍔','Chilli Burger','Food')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">🍔</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Chilli Burger</div>
+  onclick="openLightbox('','Chilli Burger','Food','./assets/food/burger-bmc.jpg')">
+
+  <img 
+    src="./assets/food/burger-bmc.jpg"
+    alt="Chilli Burger"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    Chilli Burger
+  </div>
+</div>
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--t);font-size:56px;transition-delay:0.0s;cursor:none;position:relative;overflow:hidden"
+  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
+  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
+  onclick="openLightbox('','DD Puram Outlet','Outlets','./assets/franchise/1.png')">
+
+  <img 
+    src="./assets/franchise/1.png"
+    alt="DD Puram Outlet"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    DD Puram Outlet
+  </div>
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:var(--t);font-size:56px;transition-delay:0.0s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.08s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('🏛️','DD Puram Outlet','Outlets')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">🏛️</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">DD Puram Outlet</div>
+  onclick="openLightbox('','Franchise Partner','People','./assets/franchise/3.png')">
+
+  <img 
+    src="./assets/franchise/3.png"
+    alt="Franchise Partner"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    Franchise Partner
+  </div>
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.08s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--y);font-size:56px;transition-delay:0.16s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('🤝','Franchise Partner','People')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">🤝</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Franchise Partner</div>
+  onclick="openLightbox('','Masala Chai','Food','./assets/food/Masala Chai  - Bun Makkhan Chai.jpg')">
+
+  <img 
+    src="./assets/food/Masala Chai  - Bun Makkhan Chai.jpg"
+    alt="Masala Chai"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    Masala Chai
+  </div>
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:var(--y);font-size:56px;transition-delay:0.16s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 2;background:var(--t);font-size:80px;transition-delay:0.24s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('🍵','Masala Chai','Food')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">🍵</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Masala Chai</div>
+  onclick="openLightbox('','Grand Opening','Events','./assets/adda/30.jpg')">
+
+  <img 
+    src="./assets/adda/30.jpg"
+    alt="Grand Opening"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    Grand Opening
+  </div>
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 2;background:var(--t);font-size:80px;transition-delay:0.24s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.0s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('🎉','Grand Opening','Events')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">🎉</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Grand Opening</div>
+  onclick="openLightbox('','Our Team','People','./assets/franchise/2.png')">
+
+  <img 
+    src="./assets/franchise/2.png"
+    alt="Our Team"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    Our Team
+  </div>
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.0s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--y);font-size:56px;transition-delay:0.08s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('👨‍🍳','Our Team','People')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">👨‍🍳</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Our Team</div>
+  onclick="openLightbox('','Nachos','Food','./assets/food/Fries  - Bun Makkhan Chai.jpg')">
+
+  <img 
+    src="./assets/food/Fries  - Bun Makkhan Chai.jpg"
+    alt="Nachos"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    Nachos
+  </div>
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:var(--y);font-size:56px;transition-delay:0.08s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 1;background:var(--t);font-size:56px;transition-delay:0.16s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('🌽','Nachos','Food')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">🌽</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Nachos</div>
+  onclick="openLightbox('','Rampur Garden','Outlets','./assets/adda/h2.png')">
+
+  <img 
+    src="./assets/adda/h2.png"
+    alt="Rampur Garden"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    Rampur Garden
+  </div>
 </div>
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:var(--t);font-size:56px;transition-delay:0.16s;cursor:none"
+<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.24s;cursor:none;position:relative;overflow:hidden"
   onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
   onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('🏪','Rampur Garden','Outlets')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">🏪</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">Rampur Garden</div>
-</div>
+  onclick="openLightbox('','BMC Vibes','Events','./assets/franchise/1.png')">
 
-<div class="gal-item rv" style="grid-row-end:span 1;background:#0D1E28;font-size:56px;transition-delay:0.24s;cursor:none"
-  onmouseenter="this.style.transform='scale(1.04)';this.style.zIndex='2';this.style.boxShadow='0 20px 48px rgba(0,0,0,.25)'"
-  onmouseleave="this.style.transform='';this.style.zIndex='1';this.style.boxShadow='none'"
-  onclick="openLightbox('✨','BMC Vibes','Events')">
-  <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:20px 20px;pointer-events:none"></div>
-  <span style="position:relative;z-index:1">✨</span>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">BMC Vibes</div>
+  <img 
+    src="./assets/franchise/1.png"
+    alt="BMC Vibes"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      pointer-events:none;
+    "
+  >
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      transparent,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.55)
+    );
+    pointer-events:none;
+  "></div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.60));color:#fff;font-family:var(--f1);font-weight:900;font-size:13px">
+    BMC Vibes
+  </div>
 </div>
     </div>
-    <div style="margin-top:32px;padding:20px 28px;background:rgba(42,171,187,.08);border-radius:14px;border:1px dashed rgba(42,171,187,.30);text-align:center">
-      <p style="font-size:14px;color:#4A6070">📸 <strong>Image placeholders shown.</strong> Replace each emoji card with: <code style="background:rgba(42,171,187,.10);padding:2px 8px;border-radius:6px;font-size:13px;color:var(--t)">&lt;img src="your-photo.jpg" style="width:100%;height:100%;object-fit:cover"&gt;</code></p>
-    </div>
+
   </div>
 </section>
 
 <!-- Lightbox -->
-<div id="lightbox" style="position:fixed;inset:0;z-index:5000;background:rgba(13,30,40,.94);display:none;align-items:center;justify-content:center" onclick="closeLightbox()">
-  <div style="background:#0D1E28;border-radius:24px;padding:48px;text-align:center;border:1px solid rgba(245,200,0,.20)">
-    <div id="lb-emoji" style="font-size:120px;margin-bottom:20px"></div>
-    <div id="lb-label" style="font-family:var(--f1);font-weight:900;font-size:24px;color:#fff"></div>
-    <div id="lb-cat" style="font-size:13px;color:rgba(255,255,255,.40);margin-top:8px"></div>
+<div id="lightbox"
+  style="
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    background:rgba(13,30,40,.94);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+  "
+  onclick="closeLightbox()">
+
+  <div
+    style="
+      background:#0D1E28;
+      border-radius:24px;
+      overflow:hidden;
+      border:1px solid rgba(245,200,0,.20);
+      max-width:900px;
+      width:100%;
+    "
+    onclick="event.stopPropagation()">
+
+    <!-- IMAGE -->
+    <img
+      id="lb-image"
+      src=""
+      alt=""
+      style="
+        width:100%;
+        max-height:80vh;
+        object-fit:cover;
+        display:block;
+      "
+    >
+
+    <!-- HEADING -->
+    <div
+      id="lb-label"
+      style="
+        padding:18px 24px;
+        font-family:var(--f1);
+        font-weight:900;
+        font-size:22px;
+        color:#fff;
+        text-align:center;
+      ">
+    </div>
+
   </div>
 </div>
-
 <footer class="site-footer">
   <div class="foot-grid">
     <div>
@@ -251,13 +615,18 @@
 </footer>
 <a id="wa" href="#?text=Hi! I'm interested in BMC." target="_blank" rel="noreferrer" title="Chat on WhatsApp">💬</a>
 <script>
-function openLightbox(e,l,c){
-  document.getElementById('lb-emoji').textContent=e
-  document.getElementById('lb-label').textContent=l
-  document.getElementById('lb-cat').textContent=c
-  document.getElementById('lightbox').style.display='flex'
+function openLightbox(emoji, label, category, imageUrl){
+
+  document.getElementById('lb-label').innerText = label;
+
+  document.getElementById('lb-image').src = imageUrl;
+
+  document.getElementById('lightbox').style.display = 'flex';
 }
-function closeLightbox(){ document.getElementById('lightbox').style.display='none' }
+
+function closeLightbox(){
+  document.getElementById('lightbox').style.display = 'none';
+}
 </script>
 
 

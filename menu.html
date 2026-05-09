@@ -26,7 +26,7 @@
 <div id="c-ring"></div>
 
 <nav id="main-nav">
-  <a href="./index.html" class="nav-logo"><img src="./assets/images/logo.png" alt="Bun Makkhan Chai" style="height:44px;width:auto;display:block"></a>
+<a href="./index.html" class="nav-logo"><img class="nv-logo" src="./assets/images/logo.png" alt="Bun Makkhan Chai" style="height:124px;width:auto;display:block;position: absolute;top:4px"></a>
   <div class="nav-links-center">
     <a href="./our-story.html" class="nl">Our Story</a>
 <a href="./menu.html" class="nl active">Menu</a>
@@ -77,13 +77,14 @@
 </script>
 <div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,48 C480,0 960,72 1440,24 L1440,72 L0,72 Z" fill="#FEFCE8"./></svg></div>
 
-<section style="background:#FEFCE8;padding:80px 64px">
+<section class="menu-main" style="background:#FEFCE8;padding:80px 64px">
   <div style="max-width:1400px;margin:0 auto">
-    <div style="margin-bottom:48px">
+ 
+    <div style="margin-bottom:5px">
       <div class="stag">FULL MENU</div>
       <div class="big-rev"><p><span class="wo"><span class="wi ">What's</span></span> <span class="wo"><span class="wi acc">cooking</span></span> <span class="wo"><span class="wi ">at</span></span> <span class="wo"><span class="wi ">your</span></span> <span class="wo"><span class="wi ">adda.</span></span></p></div>
     </div>
-    <div class="menu-tabs-sticky" style="position:sticky;top:74px;z-index:100;background:#FEFCE8;padding-bottom:24px;margin-bottom:32px;border-bottom:1px solid rgba(245,200,0,.30)">
+    <div class="menu-tabs-sticky" style="position:relative;top:74px;z-index:100;background:#FEFCE8;padding-bottom:24px;margin-bottom:32px;border-bottom:1px solid rgba(245,200,0,.30)">
       <div class="menu-tabs-row" style="display:flex;gap:12px;flex-wrap:wrap"><button type="button" class="menu-tab  active" data-tab="Hot Chai" onclick="switchTab(this,'Hot Chai')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:var(--t);color:#fff;transform:scale(1.05);box-shadow:0 4px 20px rgba(42,171,187,.35)">Hot Chai</button>
 <button type="button" class="menu-tab" data-tab="Cold Drinks" onclick="switchTab(this,'Cold Drinks')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070">Cold Drinks</button>
 <button type="button" class="menu-tab" data-tab="Bun & Snacks" onclick="switchTab(this,'Bun & Snacks')" style="padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070">Bun & Snacks</button>
@@ -94,7 +95,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/kulhad-chai.svg" onerror="this.src='./assets/food/_default.svg'" alt="Kulhad Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Chai  - Bun Makkhan Chai.jpg"  alt="Kulhad Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹25</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -110,7 +111,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/masala-chai.svg" onerror="this.src='./assets/food/_default.svg'" alt="Masala Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Masala Chai  - Bun Makkhan Chai.jpg"  alt="Masala Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹30</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -126,7 +127,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/adrak-chai.svg" onerror="this.src='./assets/food/_default.svg'" alt="Adrak Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Chai  - Bun Makkhan Chai.jpg"  alt="Adrak Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹25</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -142,7 +143,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/elaichi-chai.svg" onerror="this.src='./assets/food/_default.svg'" alt="Elaichi Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Masala Chai  - Bun Makkhan Chai.jpg"  alt="Elaichi Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹25</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -158,7 +159,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/kashmiri-chai.svg" onerror="this.src='./assets/food/_default.svg'" alt="Kashmiri Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Chai  - Bun Makkhan Chai.jpg"  alt="Kashmiri Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹45</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -174,7 +175,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/special-bmc-chai.svg" onerror="this.src='./assets/food/_default.svg'" alt="Special BMC Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Masala Chai  - Bun Makkhan Chai.jpg"  alt="Special BMC Chai" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹40</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -190,7 +191,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/cold-coffee.svg" onerror="this.src='./assets/food/_default.svg'" alt="Cold Coffee" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/coffee  - Bun Makkhan Chai.jpg"  alt="Cold Coffee" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹60</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -206,7 +207,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/bmc-special-shake.svg" onerror="this.src='./assets/food/_default.svg'" alt="BMC Special Shake" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Shake  - Bun Makkhan Chai.jpg"  alt="BMC Special Shake" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹80</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -222,7 +223,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/lemon-soda.svg" onerror="this.src='./assets/food/_default.svg'" alt="Lemon Soda" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Lemonade - Bun Makkhan Chai.jpg"  alt="Lemon Soda" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹35</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -238,7 +239,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/mango-lassi.svg" onerror="this.src='./assets/food/_default.svg'" alt="Mango Lassi" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Shake  - Bun Makkhan Chai.jpg"  alt="Mango Lassi" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹55</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -254,7 +255,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/bun-makkhan.svg" onerror="this.src='./assets/food/_default.svg'" alt="Bun Makkhan" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Bun Makkhan  - Bun Makkhan Chai.jpg"  alt="Bun Makkhan" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹30</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -270,7 +271,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/mumbai-chutney-sandwich.svg" onerror="this.src='./assets/food/_default.svg'" alt="Mumbai Chutney Sandwich" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Bread - Bun Makkhan Chai.jpg"  alt="Mumbai Chutney Sandwich" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹59</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -286,7 +287,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/vada-pao.svg" onerror="this.src='./assets/food/_default.svg'" alt="Vada Pao" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Fries  - Bun Makkhan Chai.jpg"  alt="Vada Pao" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹40</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -302,7 +303,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/aloo-paratha.svg" onerror="this.src='./assets/food/_default.svg'" alt="Aloo Paratha" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/burger-bmc.jpg"  alt="Aloo Paratha" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹55</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -318,7 +319,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/maggi.svg" onerror="this.src='./assets/food/_default.svg'" alt="Maggi" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Maggie  - Bun Makkhan Chai.jpg"  alt="Maggi" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹45</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -334,7 +335,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/chilli-cheese-burst-burger.svg" onerror="this.src='./assets/food/_default.svg'" alt="Chilli Cheese Burst Burger" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/burger-bmc.jpg"  alt="Chilli Cheese Burst Burger" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹89</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -350,7 +351,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/nachos.svg" onerror="this.src='./assets/food/_default.svg'" alt="Nachos" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Pakoda - Bun Makkhan Chai.jpg"  alt="Nachos" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹79</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -366,7 +367,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/pasta-china-town.svg" onerror="this.src='./assets/food/_default.svg'" alt="Pasta China Town" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Pizza - Bun Makkhan Chai.jpg"  alt="Pasta China Town" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹99</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -382,7 +383,7 @@
   onmouseenter="this.style.transform='translateY(-8px) scale(1.02)';this.style.borderColor='var(--t)';this.style.boxShadow='0 20px 48px rgba(42,171,187,.18)'"
   onmouseleave="this.style.transform='';this.style.borderColor='rgba(245,200,0,.25)';this.style.boxShadow='none'">
   <div style="aspect-ratio:16/10;min-height:148px;background:rgba(245,200,0,.08);position:relative;overflow:hidden">
-    <img src="./assets/food/paneer-tikka-roll.svg" onerror="this.src='./assets/food/_default.svg'" alt="Paneer Tikka Roll" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
+    <img src="./assets/food/Panner Pakoda - Bun Makkhan Chai.jpg"  alt="Paneer Tikka Roll" style="width:100%;height:100%;object-fit:cover;transition:transform .35s ease" loading="lazy"
       onmouseenter="this.style.transform='scale(1.06)'" onmouseleave="this.style.transform=''">
     <div style="position:absolute;top:10px;right:10px;background:var(--y);color:#0D1E28;font-family:var(--f1);font-weight:900;font-size:14px;padding:4px 14px;border-radius:100px">₹85</div>
     <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border:2px solid #22c55e;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff"><div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div></div>
@@ -394,9 +395,9 @@
   </div>
 </div></div>
     <div style="text-align:center;margin-top:48px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-      <a href="https://zomato.com" target="_blank" rel="noreferrer" class="btn btn-t">Order on Zomato <span class="btn-arr">→</span></a>
-      <a href="https://swiggy.com" target="_blank" rel="noreferrer" class="btn btn-dk">Order on Swiggy <span class="btn-arr">→</span></a>
-      <a href="./locations.html" class="btn" style="background:rgba(42,171,187,.10);color:#2AABBB;border:1.5px solid rgba(42,171,187,.30)">Visit Us In Person</a>
+      <a href="/" target="_blank" rel="noreferrer" class="btn btn-t">Order on Zomato <span class="btn-arr">→</span></a>
+      <a href="/" target="_blank" rel="noreferrer" class="btn btn-dk">Order on Swiggy <span class="btn-arr">→</span></a>
+      <a href="/" class="btn" style="background:rgba(42,171,187,.10);color:#2AABBB;border:1.5px solid rgba(42,171,187,.30)">Visit Us In Person</a>
     </div>
   </div>
 </section>
