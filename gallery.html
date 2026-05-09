@@ -69,14 +69,14 @@
 <script>
 (function(){
   const gs = document.querySelectorAll('.page-hero-line span')
-  const sub = document.getElementById('hero-sub-p')
+const sub = document.getElementById('hero-sub-p')
   const tl = gsap.timeline({delay:.1})
   gs.forEach((el,i) => tl.to(el, {y:0, opacity:1, duration:.9, ease:'power4.out'}, i===0?'+=0':'-=0.7'))
   if(sub) tl.to(sub, {opacity:1, y:0, duration:.7, ease:'power3.out'}, '-=0.4')
 })()
 </script>
 <div class="wave-wrap"><svg viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,48 C480,0 960,72 1440,24 L1440,72 L0,72 Z" fill="#FEFCE8"./></svg></div>
-<section style="background:#FEFCE8;padding:80px 64px">
+<section class="gall-m" style="background:#FEFCE8;padding:80px 64px">
   <div style="max-width:1400px;margin:0 auto">
     <div style="margin-bottom:48px">
       <div class="stag">MOMENTS FROM THE ADDA</div>
