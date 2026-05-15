@@ -60,8 +60,8 @@ nav#main-nav.hide{transform:translateY(-110%)}
 #ham-btn div{border-radius:2px;background:#0D1E28}
 
 /* WA float */
-#wa{position:fixed;bottom:28px;right:28px;z-index:900;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 20px rgba(37,211,102,.50);text-decoration:none;transition:transform .28s cubic-bezier(.34,1.56,.64,1);cursor:none}
-#wa::before{content:'';position:absolute;width:100%;height:100%;border-radius:50%;background:#25D366;animation:pulseRing 2.5s ease-out infinite;opacity:.5}
+#wa{position:fixed;bottom:28px;right:28px;z-index:900;width:54px;height:54px;border-radius:50%;background:#ffffff;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 20px rgba(37,211,102,.50);text-decoration:none;transition:transform .28s cubic-bezier(.34,1.56,.64,1);cursor:none}
+/* #wa::before{content:'';position:absolute;width:100%;height:100%;border-radius:50%;background:#25D366;animation:pulseRing 2.5s ease-out infinite;opacity:.5} */
 #wa:hover{transform:scale(1.15)}
 
 /* Buttons */
@@ -513,5 +513,31 @@ footer.site-footer{background:#060E14;padding:64px 64px 0;border-top:4px solid;b
 
   .float-m{
     animation: none !important;
+  }
+}
+
+.scroll-arrow{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  color:#000000;
+  font-size:22px;
+  animation:bounce 1.8s infinite;
+  opacity:1;
+  z-index: 999;
+      background: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+@keyframes bounce{
+  0%,100%{
+    transform:translateX(-50%) translateY(0);
+  }
+  50%{
+    transform:translateX(-50%) translateY(8px);
   }
 }
