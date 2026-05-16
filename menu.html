@@ -407,7 +407,7 @@
 <div class="wave-wrap"><svg style="background: #fefce8;" viewBox="0 0 1440 72" preserveAspectRatio="none"><path d="M0,20 C240,68 600,0 900,48 C1200,68 1320,20 1440,36 L1440,72 L0,72 Z" fill="#2AABBB"./></svg></div>
 
 <!-- Chef note -->
-<section style="background:#2AABBB;padding:80px 64px">
+<section class="menu-s2" style="background:#2AABBB;padding:80px 64px">
   <div style="max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
     <div class="rl">
       <div class="stag stag-w">THE RECIPE PROMISE</div>
@@ -483,35 +483,47 @@
 </a>
 <script>
 function switchTab(btn, tab) {
-  document.querySelectorAll('.menu-tab').forEach(b => {
-    b.style.cssText = 'padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:rgba(42,171,187,.08);color:#4A6070'
-    b.classList.remove('active')
-  })
-  btn.style.cssText = 'padding:11px 24px;border-radius:100px;font-family:var(--f2);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:none;transition:all .25s cubic-bezier(.34,1.56,.64,1);background:var(--t);color:#fff;transform:scale(1.05);box-shadow:0 4px 20px rgba(42,171,187,.35)'
-  btn.classList.add('active')
-  document.querySelectorAll('.menu-tab-content').forEach(el => el.style.display='none')
-  const el = document.getElementById('tab-' + tab.replace(/ /g,'').replace('&',''))
-  if (!el) return
+  /* deactivate all tabs */
+  document.querySelectorAll('.menu-tab').forEach(function(b) {
+    b.style.background = 'rgba(42,171,187,.08)';
+    b.style.color = '#4A6070';
+    b.style.transform = '';
+    b.style.boxShadow = '';
+    b.classList.remove('active');
+  });
 
-  const isMobile = window.matchMedia('(max-width: 768px)').matches
-  if (isMobile) {
-    el.style.display = 'grid'
-    el.style.gridTemplateColumns = '1fr'
-    el.style.gap = '14px'
-  } else {
-    el.style.display = 'grid'
-    el.style.gridTemplateColumns = 'repeat(auto-fit,minmax(240px,1fr))'
-    el.style.gap = '24px'
+  /* activate clicked tab */
+  btn.style.background = 'var(--t)';
+  btn.style.color = '#fff';
+  btn.style.transform = 'scale(1.05)';
+  btn.style.boxShadow = '0 4px 20px rgba(42,171,187,.35)';
+  btn.classList.add('active');
+
+  /* hide all content panels */
+  document.querySelectorAll('.menu-tab-content').forEach(function(el) {
+    el.style.display = 'none';
+  });
+
+  /* show the target panel */
+  var id = 'tab-' + tab.replace(/\s/g, '').replace('&', '');
+  var el = document.getElementById(id);
+  if (el) {
+    el.style.display = 'grid';
   }
 }
 
-window.addEventListener('resize', () => {
-  const activeBtn = document.querySelector('.menu-tab.active')
-  if (activeBtn) switchTab(activeBtn, activeBtn.dataset.tab || 'Hot Chai')
-})
+/* Mobile fix: touchend on each button, and fix cursor */
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.menu-tab').forEach(function(btn) {
+    btn.style.cursor = 'pointer';
+    btn.addEventListener('touchend', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      switchTab(this, this.getAttribute('data-tab'));
+    }, { passive: false });
+  });
+});
 </script>
-
-
 <script src="./js/core.js"></script>
 </body></html>
 
